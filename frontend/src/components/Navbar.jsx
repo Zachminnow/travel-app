@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: 'Contact', path: '/contact' }
   ];
 
-  // Close dropdowns when clicking outside
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
