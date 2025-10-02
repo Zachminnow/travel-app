@@ -2,15 +2,16 @@ import React from "react";
 import sliderImage1 from "../assets/images/slider-image-1.jpeg";
 import sliderImage2 from "../assets/images/slider-image-2.jpeg";
 import sliderImage3 from "../assets/images/slider-image-3.jpeg";
+import { TravelInput } from "../components/Travel-Input";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
 
   return (
-    <div className=" bg-[#EFE9EB] flex items-center justify-center">
+    <div className=" bg-[#EFE9EB] flex items-center justify-center flex-col ">
       <div className="min-w-full flex justify-center items-center">
         <div
-          className="w-[1380px] h-[600px] relative flex items-center justify-center bg-cover bg-center rounded-lg shadow-lg flex-col"
+          className="w-[1300px] h-[600px] relative flex items-center justify-center bg-cover bg-center rounded-lg shadow-lg flex-col"
           style={{
             backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(${sliderImages[0]})`,
           }}
@@ -24,6 +25,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <TravelInput />
     </div>
   );
 };
