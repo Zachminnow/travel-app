@@ -33,7 +33,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-[#2E2E2E] mt-7 shadow-lg w-[1180px] mx-auto rounded-lg text-white">
+    <nav className="bg-[#2E2E2E] mt-7 shadow-lg w-[1180px] mx-auto rounded-lg text-white mb-5">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-2xl font-allan text-pink-600 hover:text-white transition-colors">

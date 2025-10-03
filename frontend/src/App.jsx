@@ -9,6 +9,8 @@ import TourDetails from './pages/TourDetails';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (
