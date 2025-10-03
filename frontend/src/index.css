@@ -10,11 +10,13 @@
   font-family: "Roboto", sans-serif;
 }
 .grid-container {
-    background-color: #e68d8d;
+ 
+  width: 100%;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px;
+  grid-template-columns: 300px 200px 200px 200px;
+  grid-template-rows: 400px 200px;
   gap: 20px;
-  grid-template-areas: "box-1 box-1 box-2 box-2"
-   "box-3 box-4 box-2 box-2";
+  grid-template-areas:
+    "box-1 box-1 box-2 box-2"
+    "box-3 box-4 box-2 box-2";
 }

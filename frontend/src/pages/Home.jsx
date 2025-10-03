@@ -45,7 +45,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-center mt-10 flex flex-col ">
+        <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col ">
           <div className=" flex flex-col w-full justify-center items-start  text-start mb-6">
             <h2 className="text-1xl font-bold text-[#2E2E2E]  mb-4 items-start border-l-2 pl-2 border-pink-600">
               Amaizing destinations
@@ -55,11 +55,15 @@ const Home = () => {
             </h1>
           </div>
           <div className="grid-container">
-            <div className="bg-black" style={{ gridArea: "box-1" }}></div>
-            <div className="bg-zinc-600" style={{ gridArea: "box-2" }}></div>
-            <div className="bg-purple-500" style={{ gridArea: "box-3" }}></div>
-            <div className="bg-pink-500" style={{ gridArea: "box-4" }}></div>
+            <div className="bg-black rounded-sm mr-1" style={{ gridArea: "box-1", width: "540px", marginRight: "20px" }}></div>
+            <div className="bg-zinc-600 rounded-sm ml-2" style={{ gridArea: "box-2", width: "550px"}}></div>
+            <div className="bg-purple-500 rounded-sm" style={{ gridArea: "box-3", width: "300px" }}></div>
+            <div className="bg-pink-500 rounded-sm" style={{ gridArea: "box-4", width: "220px" }}></div>
           </div>
+          <div className="box w-full flex justify-center items-center mt-6">
+            <Button text="View All Destinations" link="/destinations" />
+          </div>
+          
         </div>
       </section>
     </div>
