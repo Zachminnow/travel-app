@@ -6,6 +6,7 @@ import aboutImage from "../assets/images/About-img.png";
 import { TravelInput } from "../components/Travel-Input";
 import { Button } from "../components/Button";
 import { RightBox } from "../components/RightBox";
+import { GridBox } from "../components/GridBox";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
@@ -54,16 +55,10 @@ const Home = () => {
               Explore the world's most beautiful places with our curated travel
             </h1>
           </div>
-          <div className="grid-container">
-            <div className="bg-black rounded-sm mr-1" style={{ gridArea: "box-1", width: "540px", marginRight: "20px" }}></div>
-            <div className="bg-zinc-600 rounded-sm ml-2" style={{ gridArea: "box-2", width: "550px"}}></div>
-            <div className="bg-purple-500 rounded-sm" style={{ gridArea: "box-3", width: "300px" }}></div>
-            <div className="bg-pink-500 rounded-sm" style={{ gridArea: "box-4", width: "220px" }}></div>
-          </div>
+          <GridBox />
           <div className="box w-full flex justify-center items-center mt-6">
             <Button text="View All Destinations" link="/destinations" />
           </div>
-          
         </div>
       </section>
     </div>

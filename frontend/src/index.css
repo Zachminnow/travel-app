@@ -10,7 +10,6 @@
   font-family: "Roboto", sans-serif;
 }
 .grid-container {
- 
   width: 100%;
   display: grid;
   grid-template-columns: 300px 200px 200px 200px;
