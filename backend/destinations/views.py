@@ -1,14 +1,29 @@
-# from django.shortcuts import render
-# from .models import Destination, Tours
-# from django.views.generic import ListView, DetailView
-# from django.conf import settings
-# from django.contrib import messages
+from typing import Any
+from .forms import DestinationForm
+from django.contrib import messages
+from django.views.generic import ListView, DetailView, View
+from .models import Destination, Tour
 
 
-# class DestinationsListView(ListView):
-#     model = Destination
-#     template_name = 'destinations/dest_list.html'
-#     paginate_by = getattr(settings, 'DESTINATIONS_PER_PAGE', 12)
+class DestinationListView(ListView):
+    model = Destination
+    template_name = 'destinations/destination_list.html'
+    context_object_name = 'destinations'
+    queryset = Destination.objects.all().order_by('-pickup_date')
 
-#     def get_queryset(self):
-#         queryset = Destination.objects.filter()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+
+class Home(View):
+    template_name = 'destinations/home.html'
+
+    def get_context_data(self, **kwargs) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["featured_destinations"] = Destination.objects.filter(
+            is_featured=True)
+        context['all_destinations'] = Destination.objects.filter.all()
+        context['tours'] = Tour.objects.all()
+
+        return context
