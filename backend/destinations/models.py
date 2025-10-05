@@ -36,7 +36,7 @@ class Destination(models.Model):
 
 class Tour(models.Model):
     """Travel packages/ tours"""
-    PACKAGE_TYPES = [
+    TOUR_TYPES = [
         ('adventure', 'Adventure'),
         ('beach', 'Beach'),
         ('cultural', 'Cultural'),
@@ -50,8 +50,8 @@ class Tour(models.Model):
     title = models.CharField(max_length=100)
     destination = models.ForeignKey(
         Destination, on_delete=models.CASCADE, related_name='tours')
-    package_type = models.CharField(
-        max_length=20, choices=PACKAGE_TYPES, default='adventure')
+    tour_type = models.CharField(
+        max_length=20, choices=TOUR_TYPES, default='adventure')
     description = models.TextField()
     travel_guide = models.CharField(max_length=200, blank=True)
     duration_dates = models.PositiveIntegerField(default=1)
