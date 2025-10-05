@@ -25,7 +25,7 @@ class DestinationForm(forms.ModelForm):
             return image
 
 
-class ToursForm(forms.ModelForm):
+class TourForm(forms.ModelForm):
     class Meta:
         model = Tour
         fields = [
