@@ -11,6 +11,7 @@ import { Carousel } from "../components/carousel";
 import { TourCarousel } from "../components/TourCarousel";
 import { CustomerImage } from "../components/CustomerImage";
 import { TestimonialCarousel } from "../components/TestimonialCarousel";
+import { FooterCard } from "../components/FooterCard";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
@@ -116,6 +117,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <footer className="w-full bg-[#2E2E2E] text-white p-4 flex flex-col items-center justify-center mt-10">
+        <FooterCard />
+      </footer>
     </div>
   );
 };
