@@ -8,7 +8,7 @@ export const GridBox = () => {
   return (
     <div className="grid-container">
       <div
-        className=" rounded-sm mr-1 transition-transform duration-300 hover:scale-105"
+        className=" rounded-sm mr-1 transition-transform duration-300 hover:scale-105 shadow-sm"
         style={{
           gridArea: "box-1",
           width: "540px",
@@ -21,7 +21,7 @@ export const GridBox = () => {
         <Button text="Tokyo" link="/destinations/tokyo" />
       </div>
       <div
-        className="rounded-sm ml-2 transition-transform duration-300 hover:scale-105"
+        className="rounded-sm ml-2 transition-transform duration-300 hover:scale-105 shadow-sm"
         style={{
           gridArea: "box-2",
           width: "550px",
@@ -33,7 +33,7 @@ export const GridBox = () => {
         <Button  text="Africa" link="/destinations/africa" />
       </div>
       <div
-        className=" rounded-sm transition-transform duration-300 hover:scale-105"
+        className=" rounded-sm transition-transform duration-300 hover:scale-105 shadow-sm"
         style={{
           gridArea: "box-3",
           width: "300px",
@@ -45,7 +45,7 @@ export const GridBox = () => {
         <Button text="London" link="/destinations/tokyo" />
       </div>
       <div
-        className="rounded-sm transition-transform duration-300 hover:scale-105"
+        className="rounded-sm transition-transform duration-300 hover:scale-105 shadow-sm"
         style={{
           gridArea: "box-4",
           width: "220px",

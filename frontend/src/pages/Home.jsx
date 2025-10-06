@@ -8,6 +8,7 @@ import { Button } from "../components/Button";
 import { RightBox } from "../components/RightBox";
 import { GridBox } from "../components/GridBox";
 import { Carousel } from "../components/carousel";
+import { TourCarousel } from "../components/TourCarousel";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
@@ -65,14 +66,31 @@ const Home = () => {
       <section>
         <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
           <div className=" flex flex-col w-full justify-center items-start  text-start mb-6">
-            <h2 className="text-1xl font-bold text-[#2E2E2E]  mb-4 items-start border-l-2 pl-2 border-pink-600">Amazing offers
+            <h2 className="text-1xl font-bold text-[#2E2E2E]  mb-4 items-start border-l-2 pl-2 border-pink-600">
+              Amazing offers
             </h2>
             <h1 className="text-2xl font-bold text-pink-600 font-allan mb-4">
-              Discover exclusive travel deals and offers for your next adventure.
+              Discover exclusive travel deals and offers for your next
+              adventure.
             </h1>
           </div>
           <div className="box w-full flex justify-center items-center mt-6">
             <Carousel />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
+          <div className="">
+            <h3 className="border-l-2 pl-2 border-pink-600 text-[#2E2E2E] font-bold">
+              Amazing Tours
+            </h3>
+            <h1 className="font-allan text-pink-600 text-2xl font-bold mt-5">
+              Trending,Best Selling Tours And Fun Destinations
+            </h1>
+          </div>
+          <div className="box w-full flex justify-center items-center mt-6">
+            <TourCarousel />
           </div>
         </div>
       </section>
