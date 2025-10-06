@@ -7,7 +7,7 @@ import { FaLuggageCart } from "react-icons/fa";
 export const TourCard = ({ TourOffers }) => {
   return (
     <div className="w-64 h-140 hover:scale-105 transition-transform duration-300 bg-white-500 rounded-lg shadow-md   flex flex-col relative">
-      <div className="absolute left-[-11px] bottom-[50%] p-3 w-full z-100">
+      <div className="absolute left-[-11px] bottom-[45%] p-3 w-full z-100 my-1">
         <Button text={TourOffers.title} link="/tours" />
       </div>
       <div style={{

@@ -51,7 +51,7 @@ export const Carousel = () => {
   ];
 
   return (
-    <div className="embla w-full overflow-hidden" ref={emblaRef}>
+    <div className="embla w-full overflow-hidden"  ref={emblaRef}>
       <div className="flex">
         {offers.map((offer, index) => (
           <div
