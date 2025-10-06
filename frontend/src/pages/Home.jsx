@@ -9,6 +9,8 @@ import { RightBox } from "../components/RightBox";
 import { GridBox } from "../components/GridBox";
 import { Carousel } from "../components/carousel";
 import { TourCarousel } from "../components/TourCarousel";
+import { CustomerImage } from "../components/CustomerImage";
+import { TestimonialCarousel } from "../components/TestimonialCarousel";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
@@ -91,6 +93,26 @@ const Home = () => {
           </div>
           <div className="box w-full flex justify-center items-center mt-6">
             <TourCarousel />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
+          <div className="">
+            <h3 className="border-l-2 pl-2 border-pink-600 text-[#2E2E2E] font-bold">
+              Testimonials
+            </h3>
+            <h1 className="font-allan text-pink-600 text-2xl font-bold mt-5">
+              What Our Clients Say About Us
+            </h1>
+          </div>
+          <div className="flex w-full justify-center items-center mt-6 relative">
+            <div className=" w-[40%] ">
+              <CustomerImage />
+            </div>
+            <div className=" w-[60%] h-full">
+              <TestimonialCarousel />
+            </div>
           </div>
         </div>
       </section>
