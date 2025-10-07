@@ -1,11 +1,21 @@
-
+import { motion } from "framer-motion";
 import { Button } from "./Button";
 export const RightBox = () => {
   return (
-    <div className="w-[100%] flex justify-center items-start flex-col gap-6">
-      <h3 className="text-lg border-pink-600 font-semibold border-l-2 pl-2 text-[#2E2E2E]">About Us</h3>
+    <motion.div
+      initial={{ opacity: 0, x: 80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="w-[100%] flex justify-center items-start flex-col gap-6"
+    >
+      <h3 className="text-lg border-pink-600 font-semibold border-l-2 pl-2 text-[#2E2E2E]">
+        About Us
+      </h3>
 
-      <h1 className="text-2xl font-bold text-pink-600 font-allan ">Discover Your Next Adventure</h1>
+      <h1 className="text-2xl font-bold text-pink-600 font-allan ">
+        Discover Your Next Adventure
+      </h1>
 
       <p className="text-[#2E2E2E]">
         Far far away, behind the word mountains, far from the countries Vokalia
@@ -19,6 +29,6 @@ export const RightBox = () => {
         skyline
       </p>
       <Button text="Read More" />
-    </div>
+    </motion.div>
   );
 };

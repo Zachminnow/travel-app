@@ -12,14 +12,19 @@ import { TourCarousel } from "../components/TourCarousel";
 import { CustomerImage } from "../components/CustomerImage";
 import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { FooterCard } from "../components/FooterCard";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
-  
 
   return (
     <div className=" bg-[#EFE9EB] flex items-center justify-center flex-col ">
-      <section className="w-full  flex flex-col justify-center items-center gap-0">
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="w-full  flex flex-col justify-center items-center gap-0"
+      >
         <div className="min-w-full flex justify-center items-center">
           <div
             className="w-[1300px] h-[600px] relative flex items-center justify-center bg-cover bg-center rounded-lg shadow-lg flex-col"
@@ -39,16 +44,28 @@ const Home = () => {
           </div>
         </div>
         <TravelInput />
-      </section>
+      </motion.section>
       <section>
         <div className="bg-[#EFE9EB]p-4 rounded-lg shadow-lg w-[1180px] flex  justify-between gap-5 items-center mt-10">
-          <div className="w-[50%] flex justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-[50%] flex justify-center items-center"
+          >
             <img src={aboutImage} alt="About Us" />
-          </div>
+          </motion.div>
 
-          <div className="w-[50%]">
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-[50%]"
+          >
             <RightBox />
-          </div>
+          </motion.div>
         </div>
       </section>
       <section>
