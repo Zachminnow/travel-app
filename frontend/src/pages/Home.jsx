@@ -15,6 +15,7 @@ import { FooterCard } from "../components/FooterCard";
 
 const Home = () => {
   const sliderImages = [sliderImage1, sliderImage2, sliderImage3];
+  
 
   return (
     <div className=" bg-[#EFE9EB] flex items-center justify-center flex-col ">
