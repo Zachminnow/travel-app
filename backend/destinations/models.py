@@ -48,21 +48,25 @@ class Tour(models.Model):
     ]
 
     title = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=100)
     destination = models.ForeignKey(
         Destination, on_delete=models.CASCADE, related_name='tours')
     tour_type = models.CharField(
         max_length=20, choices=TOUR_TYPES, default='adventure')
     description = models.TextField()
+    tour_organizer = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     travel_guide = models.CharField(max_length=200, blank=True)
+    location = models.CharField(max_length=200)
     duration_dates = models.PositiveIntegerField(default=1)
-    available_from = models.DateField(default=timezone.now())
-    available_until = models.DateField(default=timezone.now())
+    available_from = models.DateField(default=timezone.now)
+    available_until = models.DateField(default=timezone.now)
     max_participants = models.PositiveIntegerField(default=1)
     main_image = models.ImageField(upload_to='tour_pics')
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-create_at']
+        ordering = ['-created_at']
         verbose_name = 'Tour'
         verbose_name_plural = 'Tours'
 
