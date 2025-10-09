@@ -70,21 +70,35 @@ const Home = () => {
       </section>
       <section>
         <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col ">
-          <div className=" flex flex-col w-full justify-center items-start  text-start mb-6">
+          <motion.div 
+          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 80 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          
+          className=" flex flex-col w-full justify-center items-start  text-start mb-6">
             <h2 className="text-1xl font-bold text-[#2E2E2E]  mb-4 items-start border-l-2 pl-2 border-pink-600">
               Amaizing destinations
             </h2>
             <h1 className="text-2xl font-bold text-pink-600 font-allan mb-4">
               Explore the world's most beautiful places with our curated travel
             </h1>
-          </div>
+          </motion.div>
           <GridBox />
           <div className="box w-full flex justify-center items-center mt-6">
             <Button text="View All Destinations" link="/destinations" />
           </div>
         </div>
       </section>
-      <section>
+      <motion.section
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      
+      
+      
+      >
         <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
           <div className=" flex flex-col w-full justify-center items-start  text-start mb-6">
             <h2 className="text-1xl font-bold text-[#2E2E2E]  mb-4 items-start border-l-2 pl-2 border-pink-600">
@@ -99,8 +113,16 @@ const Home = () => {
             <Carousel />
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      
+      
+      
+      >
         <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
           <div className="">
             <h3 className="border-l-2 pl-2 border-pink-600 text-[#2E2E2E] font-bold">
@@ -114,8 +136,16 @@ const Home = () => {
             <TourCarousel />
           </div>
         </div>
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      
+      
+      
+      >
         <div className="bg-[#EFE9EB] p-4 rounded-lg shadow-lg w-[1180px]  justify-between gap-5 items-start mt-10 flex flex-col mb-10">
           <div className="">
             <h3 className="border-l-2 pl-2 border-pink-600 text-[#2E2E2E] font-bold">
@@ -134,11 +164,17 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <footer className="w-full bg-[#2E2E2E] text-white p-4 flex flex-col items-center justify-center mt-10">
+      <motion.footer
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      
+      className="w-full bg-[#2E2E2E] text-white p-4 flex flex-col items-center justify-center mt-10">
         <FooterCard />
-      </footer>
+      </motion.footer>
     </div>
   );
 };
