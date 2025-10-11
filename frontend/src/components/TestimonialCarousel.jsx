@@ -10,6 +10,7 @@ export const TestimonialCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 7000 }),
   ]);
+  
 
   const Testimonies = [
     {

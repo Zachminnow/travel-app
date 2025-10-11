@@ -1,0 +1,22 @@
+# Django Framework
+Django>=5.2,<5.3
+
+# Database
+psycopg2-binary>=2.9.0
+
+# Image handling (for ImageField)
+Pillow>=10.0.0
+
+# Development dependencies (optional - uncomment if needed)
+# django-debug-toolbar>=4.0.0
+# django-extensions>=3.2.0
+
+# Production dependencies (optional - uncomment when deploying)
+# gunicorn>=21.0.0
+# whitenoise>=6.0.0
+# django-cors-headers>=4.0.0
+# djangorestframework>=3.14.0
+
+# Environment management (optional)
+# python-decouple>=3.8
+# python-dotenv>=1.0.0

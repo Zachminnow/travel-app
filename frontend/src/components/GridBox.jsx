@@ -3,10 +3,18 @@ import gridImage2 from "../assets/images/slider-image-2.jpeg";
 import gridImage3 from "../assets/images/grid-pic-7.jpeg";
 import gridImage4 from "../assets/images/grid-pic-2.jpeg";
 import { Button } from "./Button";
+import {motion} from "framer-motion"
 
 export const GridBox = () => {
   return (
-    <div className="grid-container">
+    <motion.div 
+    initial={{ opacity: 0, y: 80 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+    animate={{ opacity: 1, y: 0 }}
+    
+    
+    className="grid-container">
       <div
         className=" rounded-sm mr-1 transition-transform duration-300 hover:scale-105 shadow-sm"
         style={{
@@ -56,6 +64,6 @@ export const GridBox = () => {
       >
         <Button text="Brazil" link="/destinations/brazil" />
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @import url("@fontsource/allan");
+body::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   margin: 0;

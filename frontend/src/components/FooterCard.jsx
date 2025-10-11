@@ -10,7 +10,7 @@ export const FooterCard = () => {
         alert("Thank you for subscribing!");
     }
   return (
-    <div className="box">
+    <div className="">
       <div className="grid grid-cols-3 gap-5 w-full">
         <div className="">
           <h2 className="font-allan text-2xl text-pink-600">Travola</h2>
