@@ -11,22 +11,22 @@ const HeroAbout = () => {
     {
       title: "Air bnb",
       description: "To provide the best travel experiences.",
-      icon: <FaAirbnb className="text-4xl text-white" />,
+      icon: <FaAirbnb className="text-4xl text-gray-900" />,
     },
     {
       title: "Strategic Goal",
       description: "To be the leading travel agency.",
-      icon: <MdOutlineTour className="text-4xl text-white" />,
+      icon: <MdOutlineTour className="text-4xl text-gray-900" />,
     },
     {
       title: "Flexible Options",
       description: "Customer satisfaction, integrity, and innovation.",
-      icon: <GiAirplaneDeparture className="text-4xl text-white" />,
+      icon: <GiAirplaneDeparture className="text-4xl text-gray-900" />,
     },
     {
       title: "Hospitality",
       description: "We offer a wide range of travel services.",
-      icon: <RiHotelLine className="text-4xl text-white" />,
+      icon: <RiHotelLine className="text-4xl text-gray-900" />,
     },
   ];
   return (
@@ -39,15 +39,15 @@ const HeroAbout = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="w-[1300px] h-[500px] flex flex-col rounded-lg justify-center items-center text-white"
+      className="w-[1300px] relative h-[500px] flex flex-col rounded-lg justify-center items-center text-white"
     >
-      <h1 className="text-4xl font-bold text-center mt-10">About Us</h1>
+      <h1 className="text-4xl font-bold text-center mt-10"><span className="bg-pink-600">About</span> Us</h1>
       <p className="text-lg text-center mt-4">
         We are a travel agency dedicated to providing the best travel
         experiences for our clients.
       </p>
 
-      <div className="w-[80%] grid grid-cols-4 gap-6 bg-red-800">
+      <div className="w-[80%] grid grid-cols-4 gap-6  absolute bottom-[-100px] p-5 rounded-lg  mb-10">
         {AboutData.map((item, index) => (
           <AboutCard
             key={index}
