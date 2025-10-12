@@ -1,6 +1,7 @@
 import React from "react";
 import HeroAbout from "../components/HeroAbout";
 import AboutUs from './../components/AboutUs';
+import Bookmarksgrove from "../components/Bookmarksgrove";
 
 
 const About = () => {
@@ -11,6 +12,9 @@ const About = () => {
       </section>
       <section className=" w-[1280px] mt-14 h-screen flex items-center justify-center">
         <AboutUs />
+      </section>
+       <section className=" w-[1280px] bg-white mt-14 min-h-screen flex items-center justify-center">
+       <Bookmarksgrove /> 
       </section>
     </div>
   );
