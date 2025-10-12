@@ -1,31 +1,32 @@
 import React from "react";
 import img1 from "../assets/images/e1.jpeg";
 import { FaArrowUp } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Bookmarksgrove = () => {
   const Boxes = [
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "Far far away, behind the word mountains.",
     },
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "Separated they live in Bookmarksgrove.",
     },
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "Far from the countries Vokalia and Consonantia.",
     },
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "Right at the coast of the Semantics.",
     },
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "A small river named Duden flows by their place.",
     },
     {
-      icon: <FaArrowUp className="text-lg text-pink-600" />,
+      icon: <FaCheckCircle className="text-lg text-pink-600" />,
       content: "Bookmarksgrove, where the texts live.",
     },
   ];
