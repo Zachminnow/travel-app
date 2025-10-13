@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="grid grid-cols-2 gap-10 text-white px-5 h-full items-center">
       <div className="h-full flex flex-col justify-center gap-5">
         <h2 className="font-bold border-l-2 pl-2 border-pink-600 text-gray-800">About Us</h2>
-        <h1 className="font-allan text-2xl text-pink-600">
+        <h1 className="font-allan font-bold text-3xl text-pink-600">
           Plan Your Trip with Us
         </h1>
         <p className=" text-gray-800">
