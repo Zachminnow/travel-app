@@ -1,73 +1,87 @@
+import { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { TourCard } from "./TourCard";
-import image1 from "../assets/images/b1.jpeg";
-import image2 from "../assets/images/b2.jpeg";
-import image3 from "../assets/images/b3.jpeg";
-import image4 from "../assets/images/b4.jpeg";
-import image5 from "../assets/images/b5.jpeg";
-
+import api from "../api/axios";
 
 export const TourCarousel = () => {
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 5000 }),
+  ]);
 
-    const TourOffers = [
-        {
-            image: image1,
-            title: "Tanzania",
-            description: "Explore the stunning landscapes and wildlife of Tanzania.",
-            price: "$799",
-            id: 1,
-            duration: "7 Days",
-            space: 4,
-        },
-        {
-            image: image2,
-            title: "Dakota",
-            description: "Explore the historic cities and beautiful countryside of Dakota.",
-            price: "$799",
-            id: 2,
-            duration: "5 Days",
-            space: 10,
-        },
-        {
-            image: image3,
-            title: "Egypt",
-            description: "Explore the historic cities and beautiful pyramids of Egypt.",
-            price: "$799",
-            id: 3,
-            duration: "6 Days",
-            space: 14,
-        },
-        {
-            image: image4,
-            title: "London",
-            description: "Explore the historic cities and beautiful architecture of London.",
-            price: "$799",
-            id: 4,
-            duration: "5 Days",
-            space: 20,
-        },{
-            image: image5,
-            title: "Tokyo",
-            description: "Explore the historic cities and beautiful culture of Tokyo.",
-            price: "$799",
-            id: 5,
-            duration: "7 Days",
-            space: 10,
-        }
-    ]
-  const [emblaRef] = useEmblaCarousel({ loop: true });
-  return <div className="embla w-full overflow-hidden" ref={emblaRef}>
+  const [TourOffers, setTourOffers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    <div className="flex">
-    {
-        TourOffers.map((TourOffers, index) => (
-            <div key={index} className="flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] p-3">
-                <TourCard TourOffers={TourOffers} />
+  // Fetch tours from API
+  useEffect(() => {
+    const fetchTours = async () => {
+      try {
+        setLoading(true);
+        const response = await api.get("tours/", {
+          params: {
+            page_size: 10,
+            ordering: "-created_at",
+          },
+        });
+
+        // Transform API data to match existing TourCard structure
+        const toursData = response.data.results.map((tour) => ({
+          image: tour.image_url || "/placeholder.jpg",
+          title: tour.title,
+          description: tour.description?.substring(0, 80) + "..." || 
+                      "Explore this amazing destination",
+          price: tour.price && tour.currency 
+                ? `${tour.currency} ${tour.price}` 
+                : "Contact for price",
+          id: tour.id,
+          duration: `${tour.duration_dates} Days`,
+          space: tour.max_participants,
+          slug: tour.slug,
+          destination: tour.destination_name,
+        }));
+
+        setTourOffers(toursData);
+      } catch (error) {
+        console.error("Error fetching tours:", error);
+        setTourOffers([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTours();
+  }, []);
+
+  // Loading skeleton
+  if (loading) {
+    return (
+      <div className="embla w-full overflow-hidden" ref={emblaRef}>
+        <div className="flex">
+          {[...Array(5)].map((_, index) => (
+            <div
+              key={index}
+              className="flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] p-3"
+            >
+              <div className="bg-gray-200 animate-pulse rounded-lg h-96"></div>
             </div>
-        ))
-    }
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="embla w-full overflow-hidden" ref={emblaRef}>
+      <div className="flex">
+        {TourOffers.map((TourOffers, index) => (
+          <div
+            key={index}
+            className="flex-[0_0_80%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] p-3"
+          >
+            <TourCard TourOffers={TourOffers} />
+          </div>
+        ))}
+      </div>
     </div>
-    
-  </div>;
+  );
 };
