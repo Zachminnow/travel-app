@@ -75,6 +75,54 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1044,6 +1092,33 @@
         "description": "backend.destinations.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Destination',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "backend.destinations.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.destinations.migrations.0002_tour_pricing",
+        "description": "backend.destinations.migrations.0002_tour_pricing",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('destinations', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='tour',\n            name='pricing',\n            field=models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True),\n        ),",
+        "detail": "backend.destinations.migrations.0002_tour_pricing",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.destinations.migrations.0003_alter_tour_pricing",
+        "description": "backend.destinations.migrations.0003_alter_tour_pricing",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('destinations', '0002_tour_pricing'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='tour',\n            name='pricing',\n            field=models.DecimalField(decimal_places=2, default=0, max_digits=10),\n        ),",
+        "detail": "backend.destinations.migrations.0003_alter_tour_pricing",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.destinations.migrations.0004_tour_currency",
+        "description": "backend.destinations.migrations.0004_tour_currency",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('destinations', '0003_alter_tour_pricing'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='tour',\n            name='currency',\n            field=models.CharField(choices=[('USD', 'US Dollar'), ('EUR', 'Euro'), ('GBP', 'British Pound'), ('KES', 'Kenyan Shilling'), ('TZS', 'Tanzanian Shilling'), ('UGX', 'Ugandan Shilling')], default='USD', help_text='3-letter currency code', max_length=3),\n        ),",
+        "detail": "backend.destinations.migrations.0004_tour_currency",
         "documentation": {}
     },
     {

@@ -1,13 +1,15 @@
-import React from 'react';
+
 import ContactHero from '../components/ContactHero';
+import ContactFormBox from '../components/ContactFormBox';
 
 
 const Contact = () => {
   return (
     <div className="  m-0 p-0 items-center justify-center flex flex-col">
-      <section>
+      <div className='flex flex-col bg-white items-center justify-center'>
         <ContactHero />
-      </section>
+        <ContactFormBox />
+      </div>
 
 
     </div>
