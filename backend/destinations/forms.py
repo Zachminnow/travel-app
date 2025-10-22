@@ -30,7 +30,7 @@ class TourForm(forms.ModelForm):
         model = Tour
         fields = [
             'title', 'destination', 'package_type', 'description',
-            'duration_dates', 'available_from', 'available_until',
+            'pricing', 'duration_dates', 'available_from', 'available_until',
             'max_participants', 'main_image', 'created_at'
         ]
 
@@ -48,7 +48,7 @@ class TourForm(forms.ModelForm):
         return cleaned_data
 
     def clean_price(self):
-        price = self.cleaned_data.get('price')
+        price = self.cleaned_data.get('pricing')
         if price and price < 0:
             raise ValidationError('Price cannot be negative.')
         return price

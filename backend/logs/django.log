@@ -1,0 +1,367 @@
+INFO 2025-10-14 14:28:37,368 autoreload 14204 4220 Watching for file changes with StatReloader
+INFO 2025-10-14 16:24:56,251 autoreload 13876 14216 Watching for file changes with StatReloader
+WARNING 2025-10-14 16:27:42,064 log 13876 5272 Not Found: /
+WARNING 2025-10-14 16:27:42,067 basehttp 13876 5272 "GET / HTTP/1.1" 404 2561
+WARNING 2025-10-14 16:27:42,274 log 13876 5272 Not Found: /favicon.ico
+WARNING 2025-10-14 16:27:42,279 basehttp 13876 5272 "GET /favicon.ico HTTP/1.1" 404 2612
+INFO 2025-10-14 16:28:07,671 basehttp 13876 5272 "GET /admin HTTP/1.1" 301 0
+INFO 2025-10-14 16:28:07,746 basehttp 13876 16012 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-14 16:28:08,254 basehttp 13876 16012 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-10-14 16:28:09,285 basehttp 13876 4436 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-10-14 16:28:09,289 basehttp 13876 2320 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-14 16:28:09,289 basehttp 13876 1780 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-14 16:28:09,343 basehttp 13876 16012 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-14 16:28:09,357 basehttp 13876 3236 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-14 16:28:09,398 basehttp 13876 13664 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-14 16:28:09,438 basehttp 13876 3236 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-14 16:28:28,231 basehttp 13876 3236 - Broken pipe from ('127.0.0.1', 60359)
+INFO 2025-10-14 16:28:30,544 basehttp 13876 13664 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4342
+INFO 2025-10-14 16:28:44,898 basehttp 13876 13664 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-14 16:28:45,190 basehttp 13876 13664 "GET /admin/ HTTP/1.1" 200 10963
+INFO 2025-10-14 16:28:45,241 basehttp 13876 13664 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-10-14 16:28:45,276 basehttp 13876 16012 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-10-14 16:28:45,297 basehttp 13876 13664 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-10-14 16:36:37,110 basehttp 13876 608 "GET /admin/destinations/tour/1/change/ HTTP/1.1" 200 23340
+INFO 2025-10-14 16:36:37,261 basehttp 13876 608 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-10-14 16:36:37,377 basehttp 13876 1000 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-14 16:36:37,412 basehttp 13876 7292 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-10-14 16:36:37,449 basehttp 13876 1000 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-10-14 16:36:37,518 basehttp 13876 10220 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-10-14 16:36:37,537 basehttp 13876 608 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-14 16:36:37,562 basehttp 13876 1564 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-14 16:36:37,601 basehttp 13876 7864 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-14 16:36:37,681 basehttp 13876 7292 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-14 16:36:37,694 basehttp 13876 608 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-14 16:36:37,702 basehttp 13876 10220 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-14 16:36:37,714 basehttp 13876 7864 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-10-14 16:36:37,715 basehttp 13876 1000 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-14 16:36:37,764 basehttp 13876 1000 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-10-14 16:36:37,847 basehttp 13876 1000 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-10-14 16:36:38,067 basehttp 13876 1564 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-14 16:36:38,164 basehttp 13876 1564 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+INFO 2025-10-14 16:36:38,293 basehttp 13876 1564 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-10-14 16:37:04,311 basehttp 13876 1564 "GET /admin/destinations/destination/3/change/?_to_field=id HTTP/1.1" 200 14521
+INFO 2025-10-14 16:37:04,541 basehttp 13876 1564 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-14 16:37:09,342 basehttp 13876 3108 "GET /admin/destinations/destination/3/history/ HTTP/1.1" 200 8597
+INFO 2025-10-14 16:37:20,295 basehttp 13876 3108 "GET /admin/destinations/destination/3/change/?_to_field=id HTTP/1.1" 200 14521
+INFO 2025-10-14 16:38:20,740 basehttp 13876 3108 "POST /admin/destinations/destination/3/change/?_to_field=id HTTP/1.1" 302 0
+INFO 2025-10-14 16:38:20,929 basehttp 13876 3108 "GET /admin/destinations/destination/3/change/?_to_field=id HTTP/1.1" 200 14847
+INFO 2025-10-14 16:38:21,135 basehttp 13876 3108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-14 16:38:21,260 basehttp 13876 3108 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-10-14 16:38:25,128 basehttp 13876 3108 "GET /admin/destinations/destination/3/history/ HTTP/1.1" 200 8795
+INFO 2025-10-14 16:38:34,193 basehttp 13876 3108 "GET /admin/destinations/destination/3/change/?_to_field=id HTTP/1.1" 200 14589
+INFO 2025-10-14 16:40:51,899 basehttp 13876 3108 "GET /admin/accounts/customuser/add/ HTTP/1.1" 200 22780
+INFO 2025-10-14 16:40:52,077 basehttp 13876 3108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-14 16:40:52,222 basehttp 13876 3108 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-10-14 16:43:20,624 basehttp 13876 3108 "GET /admin/auth/ HTTP/1.1" 200 5556
+INFO 2025-10-14 16:43:34,500 basehttp 13876 3108 "GET /admin/ HTTP/1.1" 200 11341
+INFO 2025-10-22 09:31:09,741 autoreload 10480 23524 Watching for file changes with StatReloader
+INFO 2025-10-22 09:31:30,987 views 10480 21908 Tours list accessed
+INFO 2025-10-22 09:31:31,925 basehttp 10480 21908 "GET /api/tours/ HTTP/1.1" 200 21267
+INFO 2025-10-22 09:31:32,652 basehttp 10480 21908 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-10-22 09:31:32,790 basehttp 10480 24616 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-10-22 09:31:32,790 basehttp 10480 4668 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-10-22 09:31:32,792 basehttp 10480 21908 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-10-22 09:31:32,976 basehttp 10480 21908 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-10-22 09:31:33,022 basehttp 10480 24616 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-10-22 09:31:33,025 basehttp 10480 4668 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-10-22 09:31:33,132 basehttp 10480 21908 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-10-22 09:31:33,234 basehttp 10480 24648 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-10-22 09:31:33,273 basehttp 10480 24648 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-10-22 09:31:33,294 basehttp 10480 26276 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-10-22 09:31:33,422 basehttp 10480 26276 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2025-10-22 09:31:33,479 basehttp 10480 22372 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2025-10-22 09:31:34,070 log 10480 22372 Not Found: /favicon.ico
+WARNING 2025-10-22 09:31:34,072 basehttp 10480 22372 "GET /favicon.ico HTTP/1.1" 404 2612
+ERROR 2025-10-22 09:37:48,123 log 10480 17384 Internal Server Error: /api/tours/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 318, in create
+    'tour_id': serializer.instances.id,
+               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TourCreateUpdateSerializer' object has no attribute 'instances'. Did you mean: 'instance'?
+ERROR 2025-10-22 09:37:48,137 basehttp 10480 17384 "POST /api/tours/ HTTP/1.1" 500 107077
+INFO 2025-10-22 09:45:02,769 autoreload 10480 23524 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\models.py changed, reloading.
+INFO 2025-10-22 09:45:05,722 autoreload 23848 27340 Watching for file changes with StatReloader
+ERROR 2025-10-22 09:45:10,816 log 23848 14616 Internal Server Error: /api/tours/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Tour.save() missing 1 required positional argument: 'instances'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 312, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\serializers.py", line 332, in create
+    return super().create(validated_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\serializers.py", line 1010, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Tour.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Tour.objects.create()`. You may need to make the field read-only, or override the TourCreateUpdateSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Tour.save() missing 1 required positional argument: 'instances'
+
+ERROR 2025-10-22 09:45:10,836 basehttp 23848 14616 "POST /api/tours/ HTTP/1.1" 500 176659
+INFO 2025-10-22 09:45:53,262 autoreload 23848 27340 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\models.py changed, reloading.
+INFO 2025-10-22 09:45:57,665 autoreload 19780 732 Watching for file changes with StatReloader
+INFO 2025-10-22 09:46:08,613 autoreload 19780 732 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\models.py changed, reloading.
+INFO 2025-10-22 09:46:11,711 autoreload 13776 18952 Watching for file changes with StatReloader
+ERROR 2025-10-22 09:46:14,869 log 13776 16180 Internal Server Error: /api/tours/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 318, in create
+    'tour_id': serializer.instances.id,
+               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TourCreateUpdateSerializer' object has no attribute 'instances'. Did you mean: 'instance'?
+ERROR 2025-10-22 09:46:14,883 basehttp 13776 16180 "POST /api/tours/ HTTP/1.1" 500 107077
+INFO 2025-10-22 09:47:55,592 autoreload 13776 18952 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 09:47:59,030 autoreload 22084 20184 Watching for file changes with StatReloader
+INFO 2025-10-22 09:48:00,793 views 22084 8520 Tour created: Diani Mombasa
+INFO 2025-10-22 09:48:01,025 basehttp 22084 8520 "POST /api/tours/ HTTP/1.1" 201 15607
+WARNING 2025-10-22 09:55:04,820 log 22084 27960 Bad Request: /api/tours/
+WARNING 2025-10-22 09:55:04,822 basehttp 22084 27960 "POST /api/tours/ HTTP/1.1" 400 14937
+WARNING 2025-10-22 09:55:47,052 log 22084 27960 Bad Request: /api/tours/
+WARNING 2025-10-22 09:55:47,057 basehttp 22084 27960 "POST /api/tours/ HTTP/1.1" 400 14991
+INFO 2025-10-22 09:56:11,017 views 22084 27960 Tour created: Kisumu
+INFO 2025-10-22 09:56:11,068 basehttp 22084 27960 "POST /api/tours/ HTTP/1.1" 201 15591
+INFO 2025-10-22 09:56:27,726 basehttp 22084 27960 "GET /api/tours/by_type/ HTTP/1.1" 200 14329
+INFO 2025-10-22 09:57:49,240 basehttp 22084 27960 "GET /api/tours/available/ HTTP/1.1" 200 15499
+INFO 2025-10-22 09:58:44,643 basehttp 22084 27960 "GET /api/tours/my_tours/ HTTP/1.1" 200 25198
+ERROR 2025-10-22 09:58:52,785 log 22084 27960 Internal Server Error: /api/tours/search_tours/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 448, in search_tours
+    min_price = request.query_params.filter(price__gte=main_price)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QueryDict' object has no attribute 'filter'
+ERROR 2025-10-22 09:58:52,796 basehttp 22084 27960 "GET /api/tours/search_tours/ HTTP/1.1" 500 102542
+INFO 2025-10-22 10:00:49,600 autoreload 22084 20184 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 10:00:52,580 autoreload 9776 10416 Watching for file changes with StatReloader
+INFO 2025-10-22 10:01:52,549 autoreload 9776 10416 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 10:01:55,166 autoreload 8860 6196 Watching for file changes with StatReloader
+INFO 2025-10-22 10:02:41,452 autoreload 8860 6196 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 10:02:44,435 autoreload 27048 19896 Watching for file changes with StatReloader
+INFO 2025-10-22 10:03:04,541 views 27048 19924 Tour search performed
+INFO 2025-10-22 10:03:04,842 basehttp 27048 19924 "GET /api/tours/search_tours/ HTTP/1.1" 200 14402
+INFO 2025-10-22 10:03:12,188 views 27048 19924 Tour search performed
+INFO 2025-10-22 10:03:12,286 basehttp 27048 19924 "GET /api/tours/search_tours/ HTTP/1.1" 200 14402
+ERROR 2025-10-22 10:03:41,248 log 27048 19924 Internal Server Error: /api/tours/statistics/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 494, in statistics
+    for tour_type, label in Tour.Tour_TYPES:
+                            ^^^^^^^^^^^^^^^
+AttributeError: type object 'Tour' has no attribute 'Tour_TYPES'. Did you mean: 'TOUR_TYPES'?
+ERROR 2025-10-22 10:03:41,262 basehttp 27048 19924 "GET /api/tours/statistics/ HTTP/1.1" 500 102212
+INFO 2025-10-22 10:04:52,186 autoreload 27048 19896 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 10:04:55,450 autoreload 24024 25972 Watching for file changes with StatReloader
+ERROR 2025-10-22 10:04:56,772 log 24024 24916 Internal Server Error: /api/tours/statistics/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 498, in statistics
+    price_stats = Tour.objects.aggregate(
+        avg_price=Avg('pricing'),
+        min_price=min('pricing'),
+        max_price=Max('pricing')
+    )
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 575, in aggregate
+    self._validate_values_are_expressions(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        (*args, *kwargs.values()), method_name="aggregate"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 2014, in _validate_values_are_expressions
+    raise TypeError(
+    ...<5 lines>...
+    )
+TypeError: QuerySet.aggregate() received non-expression(s): c.
+ERROR 2025-10-22 10:04:56,796 basehttp 24024 24916 "GET /api/tours/statistics/ HTTP/1.1" 500 115581
+INFO 2025-10-22 10:05:03,519 views 24024 24916 Tour search performed
+INFO 2025-10-22 10:05:03,717 basehttp 24024 24916 "GET /api/tours/search_tours/ HTTP/1.1" 200 14402
+ERROR 2025-10-22 10:05:07,135 log 24024 24916 Internal Server Error: /api/tours/statistics/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py", line 498, in statistics
+    price_stats = Tour.objects.aggregate(
+        avg_price=Avg('pricing'),
+        min_price=min('pricing'),
+        max_price=Max('pricing')
+    )
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 575, in aggregate
+    self._validate_values_are_expressions(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        (*args, *kwargs.values()), method_name="aggregate"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\db\models\query.py", line 2014, in _validate_values_are_expressions
+    raise TypeError(
+    ...<5 lines>...
+    )
+TypeError: QuerySet.aggregate() received non-expression(s): c.
+ERROR 2025-10-22 10:05:07,143 basehttp 24024 24916 "GET /api/tours/statistics/ HTTP/1.1" 500 115444
+INFO 2025-10-22 10:10:22,538 autoreload 24024 25972 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 10:10:25,668 autoreload 22448 15584 Watching for file changes with StatReloader
+INFO 2025-10-22 10:10:27,839 basehttp 22448 7348 "GET /api/tours/statistics/ HTTP/1.1" 200 7097
+INFO 2025-10-22 10:10:32,915 basehttp 22448 7348 "GET /api/tours/statistics/ HTTP/1.1" 200 7097
+INFO 2025-10-22 10:13:34,642 basehttp 22448 7348 "GET /api/tours/upcoming/ HTTP/1.1" 200 20383
+INFO 2025-10-22 10:17:27,593 basehttp 22448 7348 "GET /api/ HTTP/1.1" 200 5444
+INFO 2025-10-22 10:17:33,205 views 22448 7348 Destinations list accessed
+INFO 2025-10-22 10:17:33,376 basehttp 22448 7348 "GET /api/destinations/ HTTP/1.1" 200 15633
+INFO 2025-10-22 10:17:37,275 basehttp 22448 7348 "GET /api/destinations/by_country/ HTTP/1.1" 200 8569
+INFO 2025-10-22 10:17:45,037 views 22448 7348 Featured destinations accessed
+INFO 2025-10-22 10:17:45,137 basehttp 22448 7348 "GET /api/destinations/featured/ HTTP/1.1" 200 27664
+INFO 2025-10-22 10:17:55,104 basehttp 22448 7348 "GET /api/destinations/statistics/ HTTP/1.1" 200 6567
+INFO 2025-10-22 11:17:22,096 autoreload 22448 15584 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\destinations\views.py changed, reloading.
+INFO 2025-10-22 11:17:24,063 autoreload 6628 17532 Watching for file changes with StatReloader
