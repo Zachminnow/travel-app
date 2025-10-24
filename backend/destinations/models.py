@@ -54,6 +54,21 @@ class Tour(models.Model):
     tour_type = models.CharField(
         max_length=20, choices=TOUR_TYPES, default='adventure')
     description = models.TextField()
+    currency = models.CharField(  # ADD THIS FIELD
+        max_length=3,
+        default='USD',
+        choices=[
+            ('USD', 'US Dollar'),
+            ('EUR', 'Euro'),
+            ('GBP', 'British Pound'),
+            ('KES', 'Kenyan Shilling'),
+            ('TZS', 'Tanzanian Shilling'),
+            ('UGX', 'Ugandan Shilling'),
+        ],
+        help_text="3-letter currency code"
+    )
+    pricing = models.DecimalField(
+        max_digits=10, decimal_places=2, default=0.00)
     tour_organizer = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     travel_guide = models.CharField(max_length=200, blank=True)

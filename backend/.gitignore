@@ -4,3 +4,11 @@ __pycache__/
 *$py.class
 *.so
 .Python
+
+echo "logs/*.log" >> .gitignore
+echo "media/" >> .gitignore
+echo "app_venv/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "db.sqlite3" >> .gitignore
+echo ".env" >> .gitignore

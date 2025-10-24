@@ -144,13 +144,18 @@ class TourListSerializer(serializers.ModelSerializer):
     is_available = serializers.SerializerMethodField()
     days_until_start = serializers.SerializerMethodField()
 
+    pricing = serializers.DecimalField(
+        max_digits=10, decimal_places=2, read_only=True)
+    currency = serializers.CharField(max_length=3, read_only=True)
+
     class Meta:
         model = Tour
         fields = [
             'id', 'title', 'slug', 'destination_name', 'destination_country',
             'tour_type', 'location', 'duration_dates', 'available_from',
-            'available_until', 'max_participants', 'image_url',
-            'organizer_name', 'is_available', 'days_until_start', 'created_at'
+            'available_until', 'max_participants', 'image_url', 'description',
+            'organizer_name', 'is_available', 'days_until_start', 'created_at',
+            'pricing', 'currency'
         ]
         read_only_fields = ['id', 'slug', 'created_at']
 
@@ -190,6 +195,11 @@ class TourDetailSerializer(serializers.ModelSerializer):
     days_until_end = serializers.SerializerMethodField()
     spots_remaining = serializers.SerializerMethodField()
 
+    pricing = serializers.DecimalField(
+        max_digits=10, decimal_places=2, read_only=True)
+    currency = serializers.CharField(max_length=3, read_only=True)
+    formatted_price = serializers.SerializerMethodField()
+
     class Meta:
         model = Tour
         fields = ['id', 'title', 'slug', 'destination', 'destination_id',
@@ -197,7 +207,8 @@ class TourDetailSerializer(serializers.ModelSerializer):
                   'location', 'duration_dates', 'available_from',
                   'available_until', 'max_participants', 'image_url',
                   'is_available', 'days_until_start', 'days_until_end',
-                  'spots_remaining', 'created_at']
+                  'spots_remaining', 'created_at', 'pricing', 'currency',
+                  'formatted_price']
         read_only_fields = ['id', 'slug', 'created_at']
 
     def get_image_url(self, obj):
@@ -225,6 +236,12 @@ class TourDetailSerializer(serializers.ModelSerializer):
     def get_spots_remaining(self, obj):
         return obj.max_participants
 
+    def get_formatted_price(self, obj):
+        """Return price with currency symbol"""
+        if obj.pricing:
+            return f"{obj.currency} {obj.pricing:,.2f}"
+        return None
+
 
 class TourCreateUpdateSerializer(serializers.ModelSerializer):
     class Meta:
@@ -232,7 +249,7 @@ class TourCreateUpdateSerializer(serializers.ModelSerializer):
         fields = [
             'title', 'destination', 'tour_type', 'description', 'travel_guide',
             'location', 'duration_dates', 'available_from', 'available_until',
-            'max_participants', 'main_image'
+            'max_participants', 'main_image', 'pricing', 'currency'
         ]
 
     def validate_title(self, value):
@@ -258,6 +275,23 @@ class TourCreateUpdateSerializer(serializers.ModelSerializer):
         if value > 100:
             raise serializers.ValidationError(
                 "Maximum of 100 participants allowed."
+            )
+        return value
+
+    def validate_price(self, value):
+        """Validate price is positive"""
+        if value is not None and value <= 0:
+            raise serializers.ValidationError(
+                "Price must be greator than 0."
+            )
+        return value
+
+    def validate_currency(self, value):
+        """Validate currency code"""
+        allowed_currencies = ['USD', 'EUR', 'GBP', 'KES', 'TZS', 'UGX']
+        if value and value not in allowed_currencies:
+            raise serializers.ValidationError(
+                f"Currency must be one of: {', '.join(allowed_currencies)}"
             )
         return value
 
@@ -331,12 +365,19 @@ class TourSearchSerializer(serializers.ModelSerializer):
         source='destination.name', read_only=True)
     image_url = serializers.SerializerMethodField()
 
+    formatted_price = serializers.SerializerMethodField()
+
     class Meta:
         model = Tour
         fields = [
             'id', 'title', 'slug', 'destination_name', 'tour_type', 'location',
-            'duration_dates', 'image_url'
+            'duration_dates', 'image_url', 'formatted_price'
         ]
+
+    def get_formatted_price(self, obj):
+        if obj.pricing:
+            return f"{obj.currency} {obj.pricing:,.2f}"
+        return None
 
     def get_image_url(self, obj):
         if obj.main_image:
@@ -361,3 +402,7 @@ class TourStatsSerializer(serializers.Serializer):
     tours_by_type = serializers.DictField()
     available_tours = serializers.IntegerField()
     upcoming_tours = serializers.IntegerField()
+
+    average_price = serializers.DecimalField(
+        max_digits=10, decimal_places=2, required=False)
+    price_range = serializers.DictField(required=False)

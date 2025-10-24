@@ -9,7 +9,7 @@ from rest_framework.permissions import (
 )
 from django_filters.rest_framework import DjangoFilterBackend
 from django.utils import timezone
-from django.db.models import Q, Count, Prefetch
+from django.db.models import Q, Count, Prefetch, Avg, Min, Max
 
 from .models import Destination, Tour
 from .serializers import (DestinationListSerializer, DestinationDetailSerializer,
@@ -17,7 +17,7 @@ from .serializers import (DestinationListSerializer, DestinationDetailSerializer
                           TourListSerializer, TourDetailSerializer, TourCreateUpdateSerializer,
                           TourSearchSerializer, DestinationStatsSerializer, TourStatsSerializer)
 
-logger = logging.getLogger('travel')
+logger = logging.getLogger(__name__)
 
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
@@ -234,10 +234,11 @@ class TourViewSet(viewsets.ModelViewSet):
         filters.OrderingFilter
     ]
 
-    filterset_fields = ['tour_type', 'destination', 'tour_organizer']
+    filterset_fields = ['tour_type', 'destination',
+                        'tour_organizer',]
     search_fields = ['title', 'description', 'location', 'destination_name']
     ordering_fields = ['created_at', 'available_from', 'duration_dates',
-                       'max_participants']
+                       'max_participants', 'pricing']
     ordering = ['-created_at']
 
     def get_serializer_class(self):
@@ -266,6 +267,18 @@ class TourViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(available_from__gte=available_from)
         if available_until:
             queryset = queryset.filter(available_until__lte=available_until)
+
+        min_price = self.request.query_params.get('min_price')
+        max_price = self.request.query_params.get('max_price')
+
+        if min_price:
+            queryset = queryset.filter(price__gte=min_price)
+        if max_price:
+            queryset = queryset.filter(price__lte=max_price)
+
+        currency = self.request.query_params.get('currency')
+        if currency:
+            queryset = queryset.filter(currency=currency)
 
         return queryset
 
@@ -302,7 +315,7 @@ class TourViewSet(viewsets.ModelViewSet):
             f"Tour created: {serializer.data.get('title')}",
             extra={
                 'user': request.user.id,
-                'tour_id': serializer.instances.id,
+                'tour_id': serializer.instance.id,
                 'action': 'tour_created'
             }
         )
@@ -432,6 +445,18 @@ class TourViewSet(viewsets.ModelViewSet):
         if min_participants:
             queryset = queryset.filter(max_participants__gte=min_participants)
 
+        min_price = request.query_params.get('min_price')
+        max_price = request.query_params.get('max_price')
+
+        if min_price:
+            queryset = queryset.filter(price__gte=min_price)
+        if max_price:
+            queryset = queryset.filter(price_lte=max_price)
+
+        currency = request.query_params.get('currency')
+        if currency:
+            queryset = queryset.filter(currency=currency)
+
         serializer = TourSearchSerializer(
             queryset,
             many=True,
@@ -466,15 +491,25 @@ class TourViewSet(viewsets.ModelViewSet):
 
         # Tour by type
         tours_by_type = {}
-        for tour_type, label in Tour.Tour_TYPES:
+        for tour_type, label in Tour.TOUR_TYPES:
             tours_by_type[label] = Tour.objects.filter(
                 tour_type=tour_type).count()
 
+        price_stats = Tour.objects.aggregate(
+            avg_price=Avg('pricing'),
+            min_price=Min('pricing'),
+            max_price=Max('pricing')
+        )
         data = {
             'total_tours': total,
             'available_tours': available,
             'upcoming_tours': upcoming,
-            'tours_by_type': tours_by_type
+            'tours_by_type': tours_by_type,
+            'average_price': price_stats['avg_price'],
+            'price_range': {
+                'min': price_stats['min_price'],
+                'max': price_stats['max_price']
+            }
         }
 
         serializer = TourStatsSerializer(data)
