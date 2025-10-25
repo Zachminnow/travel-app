@@ -14,14 +14,22 @@ SECRET_KEY = 'django-insecure-5rqozn)m*0u_ay#)jjhn0)(@za04t#82$tr+pt*-+r8+lv=t6z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '2ed74eecdcfc.ngrok-free.app'
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://2ed74eecdcfc.ngrok-free.app'
+]
 
 # Application definition
 
 INSTALLED_APPS = [
     'destinations.apps.DestinationsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,6 +40,7 @@ INSTALLED_APPS = [
     # Third-party apps
     'corsheaders',
     'rest_framework',
+
 
 ]
 
@@ -211,6 +220,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR / 'media')
+
+# Email configuration
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

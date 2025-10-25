@@ -7,5 +7,5 @@ router.register(r'destinations', DestinationViewSet, basename='destination')
 router.register(r'tours', TourViewSet, basename='tour')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
