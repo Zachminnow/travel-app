@@ -958,3 +958,349 @@ INFO 2025-10-25 18:24:29,452 basehttp 8376 4028 "GET /static/rest_framework/img/
 INFO 2025-10-25 18:24:29,471 basehttp 8376 20940 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
 INFO 2025-10-25 18:33:35,327 autoreload 8376 15016 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\admin.py changed, reloading.
 INFO 2025-10-25 18:33:36,942 autoreload 3696 5444 Watching for file changes with StatReloader
+WARNING 2025-10-25 18:35:00,268 log 3696 14756 Forbidden: /api/contacts/
+WARNING 2025-10-25 18:35:00,269 basehttp 3696 14756 "GET /api/contacts/ HTTP/1.1" 403 5055
+WARNING 2025-10-25 18:35:09,748 log 3696 14756 Forbidden: /api/contacts/
+WARNING 2025-10-25 18:35:09,750 basehttp 3696 14756 "GET /api/contacts/ HTTP/1.1" 403 5055
+WARNING 2025-10-25 18:35:26,284 log 3696 21496 Forbidden: /api/contacts/
+WARNING 2025-10-25 18:35:26,285 basehttp 3696 21496 "GET /api/contacts/ HTTP/1.1" 403 5055
+INFO 2025-10-25 18:35:29,523 basehttp 3696 21496 "GET /api/ HTTP/1.1" 200 5462
+WARNING 2025-10-25 18:35:48,324 log 3696 21496 Forbidden: /api/contacts/put/
+WARNING 2025-10-25 18:35:48,325 basehttp 3696 21496 "GET /api/contacts/put/ HTTP/1.1" 403 5223
+WARNING 2025-10-25 18:36:00,786 log 3696 21496 Not Found: /api/contacts//PUT
+WARNING 2025-10-25 18:36:00,787 basehttp 3696 21496 "GET /api/contacts//PUT HTTP/1.1" 404 18680
+WARNING 2025-10-25 18:36:07,958 log 3696 21496 Forbidden: /api/contacts/PUT/
+WARNING 2025-10-25 18:36:07,960 basehttp 3696 21496 "GET /api/contacts/PUT/ HTTP/1.1" 403 5223
+WARNING 2025-10-25 18:36:12,346 log 3696 21496 Forbidden: /api/contacts/PUT/
+WARNING 2025-10-25 18:36:12,349 basehttp 3696 21496 "GET /api/contacts/PUT/ HTTP/1.1" 403 5223
+WARNING 2025-10-25 18:36:14,781 log 3696 21496 Forbidden: /api/contacts/PUT/
+WARNING 2025-10-25 18:36:14,783 basehttp 3696 21496 "GET /api/contacts/PUT/ HTTP/1.1" 403 5223
+INFO 2025-10-25 18:37:14,443 views 3696 20396 Tours list accessed
+INFO 2025-10-25 18:37:14,572 basehttp 3696 20396 "GET /api/tours/ HTTP/1.1" 200 26402
+INFO 2025-10-25 18:37:14,914 basehttp 3696 13704 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-10-25 18:37:14,920 basehttp 3696 13704 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-10-25 18:37:14,929 basehttp 3696 18464 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-10-25 18:37:14,931 basehttp 3696 13704 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-10-25 18:37:14,939 basehttp 3696 18464 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-10-25 18:37:14,940 basehttp 3696 20396 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-10-25 18:37:14,946 basehttp 3696 13704 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-10-25 18:37:14,965 basehttp 3696 13704 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-10-25 18:37:14,970 basehttp 3696 20396 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-10-25 18:37:14,981 basehttp 3696 10984 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-10-25 18:37:14,972 basehttp 3696 18464 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-10-25 18:37:14,988 basehttp 3696 18464 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-10-25 18:37:15,031 basehttp 3696 18464 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+WARNING 2025-10-25 18:37:15,176 log 3696 18464 Not Found: /favicon.ico
+WARNING 2025-10-25 18:37:15,177 basehttp 3696 18464 "GET /favicon.ico HTTP/1.1" 404 2669
+WARNING 2025-10-25 18:37:24,673 log 3696 22628 Not Found: /
+WARNING 2025-10-25 18:37:24,677 basehttp 3696 22628 "GET / HTTP/1.1" 404 2618
+INFO 2025-10-25 18:37:30,856 basehttp 3696 22628 "GET /admin/ HTTP/1.1" 200 13095
+INFO 2025-10-25 18:37:30,922 basehttp 3696 10680 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-25 18:37:30,923 basehttp 3696 22628 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-25 18:37:30,948 basehttp 3696 22628 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-10-25 18:37:30,949 basehttp 3696 10680 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-25 18:37:30,960 basehttp 3696 18580 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-25 18:37:30,979 basehttp 3696 22628 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-25 18:37:31,009 basehttp 3696 22628 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-10-25 18:37:31,010 basehttp 3696 10680 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-10-25 18:37:31,020 basehttp 3696 18580 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-25 18:37:43,476 basehttp 3696 18580 "GET /admin/contacts/contact/ HTTP/1.1" 200 12705
+INFO 2025-10-25 18:37:43,564 basehttp 3696 18580 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-10-25 18:37:43,584 basehttp 3696 10392 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-25 18:37:43,606 basehttp 3696 20732 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-25 18:37:43,614 basehttp 3696 9276 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-25 18:37:43,658 basehttp 3696 18580 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-25 18:37:43,713 basehttp 3696 22628 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-25 18:37:43,719 basehttp 3696 10392 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-25 18:37:43,734 basehttp 3696 20732 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-25 18:37:43,748 basehttp 3696 18580 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-10-25 18:37:43,836 basehttp 3696 10680 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-25 18:37:43,876 basehttp 3696 10680 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-10-25 18:37:43,921 basehttp 3696 9276 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-25 18:37:43,972 basehttp 3696 10680 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-10-25 18:37:43,972 basehttp 3696 9276 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-10-25 18:37:47,786 basehttp 3696 9276 "GET /admin/contacts/officelocation/ HTTP/1.1" 200 12522
+INFO 2025-10-25 18:37:47,849 basehttp 3696 9276 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-10-25 18:37:47,883 basehttp 3696 9276 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-10-25 18:37:47,939 basehttp 3696 10680 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-25 18:56:05,487 autoreload 3696 5444 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\urls.py changed, reloading.
+INFO 2025-10-25 18:56:08,376 autoreload 3176 6524 Watching for file changes with StatReloader
+INFO 2025-10-25 19:13:48,115 autoreload 3176 6524 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\urls.py changed, reloading.
+INFO 2025-10-25 19:13:50,340 autoreload 17900 19728 Watching for file changes with StatReloader
+INFO 2025-10-25 19:15:02,281 basehttp 17900 19812 "GET /api/ HTTP/1.1" 200 5462
+INFO 2025-10-25 19:24:04,423 basehttp 17900 18856 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:24:04,425 basehttp 17900 23480 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:24:34,188 basehttp 17900 23480 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:24:34,189 basehttp 17900 18856 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:27:56,677 autoreload 17900 19728 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
+INFO 2025-10-25 19:28:00,840 autoreload 3388 11632 Watching for file changes with StatReloader
+INFO 2025-10-25 19:28:50,511 basehttp 3388 6236 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:28:50,523 basehttp 3388 20968 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:28:50,882 views 3388 20968 Tours list accessed
+INFO 2025-10-25 19:28:51,099 basehttp 3388 20968 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:28:51,410 views 3388 20968 Tours list accessed
+INFO 2025-10-25 19:28:51,566 basehttp 3388 20968 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:33:14,028 views 3388 20988 Tours list accessed
+INFO 2025-10-25 19:33:14,348 basehttp 3388 20988 "GET /api/tours/ HTTP/1.1" 200 18195
+WARNING 2025-10-25 19:33:16,415 log 3388 20988 Not Found: /favicon.ico
+WARNING 2025-10-25 19:33:16,417 basehttp 3388 20988 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-25 19:33:59,230 basehttp 3388 17396 "GET /media/tour_pics/fort-jesus_FyLuVj1.jpg HTTP/1.1" 200 150605
+INFO 2025-10-25 19:34:00,237 basehttp 3388 2016 - Broken pipe from ('127.0.0.1', 53409)
+INFO 2025-10-25 19:34:00,238 basehttp 3388 20780 - Broken pipe from ('127.0.0.1', 53400)
+INFO 2025-10-25 19:34:00,238 basehttp 3388 15596 - Broken pipe from ('127.0.0.1', 53406)
+INFO 2025-10-25 19:34:00,241 basehttp 3388 160 - Broken pipe from ('127.0.0.1', 53407)
+INFO 2025-10-25 19:34:00,248 basehttp 3388 13500 - Broken pipe from ('127.0.0.1', 53399)
+INFO 2025-10-25 19:34:01,089 views 3388 21264 Tours list accessed
+INFO 2025-10-25 19:34:01,306 basehttp 3388 21264 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:34:01,769 views 3388 21264 Tours list accessed
+INFO 2025-10-25 19:34:01,872 basehttp 3388 21264 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:34:02,096 basehttp 3388 18308 "GET /media/tour_pics/fort-jesus_FyLuVj1.jpg HTTP/1.1" 200 150605
+INFO 2025-10-25 19:34:03,185 basehttp 3388 19476 - Broken pipe from ('127.0.0.1', 60385)
+INFO 2025-10-25 19:34:03,210 basehttp 3388 12924 - Broken pipe from ('127.0.0.1', 60379)
+INFO 2025-10-25 19:34:03,210 basehttp 3388 22736 - Broken pipe from ('127.0.0.1', 60383)
+INFO 2025-10-25 19:34:03,211 basehttp 3388 21140 - Broken pipe from ('127.0.0.1', 60382)
+INFO 2025-10-25 19:34:03,212 basehttp 3388 22136 - Broken pipe from ('127.0.0.1', 60380)
+INFO 2025-10-25 19:34:03,664 basehttp 3388 21264 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:34:03,850 basehttp 3388 2012 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-25 19:34:03,969 views 3388 21264 Tours list accessed
+INFO 2025-10-25 19:34:04,153 views 3388 2012 Tours list accessed
+INFO 2025-10-25 19:34:04,237 basehttp 3388 21264 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:34:04,424 basehttp 3388 2012 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-25 19:34:05,046 basehttp 3388 17824 "GET /media/tour_pics/fort-jesus_FyLuVj1.jpg HTTP/1.1" 200 150605
+INFO 2025-10-25 19:34:06,696 basehttp 3388 10140 "GET /media/tour_pics/mombasa_pic_oNkiwbK.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-25 19:34:06,850 basehttp 3388 18296 "GET /media/tour_pics/mombasa_pic.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-25 19:34:07,274 basehttp 3388 7240 "GET /media/tour_pics/mombasa_pic_awT4Jxj.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-25 19:34:12,958 basehttp 3388 22124 "GET /media/tour_pics/pyramid-of-giza.jpg HTTP/1.1" 200 1390126
+INFO 2025-10-25 19:34:16,685 basehttp 3388 19616 "GET /media/tour_pics/kisumu-city.jpg HTTP/1.1" 200 4392652
+INFO 2025-10-25 19:41:40,827 basehttp 3388 10132 "GET /media/tour_pics/kisumu-city.jpg HTTP/1.1" 200 4392652
+INFO 2025-10-25 19:41:56,482 basehttp 3388 10132 - Broken pipe from ('127.0.0.1', 63851)
+WARNING 2025-10-25 19:41:56,708 log 3388 18756 Not Found: /favicon.ico
+WARNING 2025-10-25 19:41:56,709 basehttp 3388 18756 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-25 19:42:01,245 basehttp 3388 18756 "GET /media/tour_pics/mombasa_pic_awT4Jxj.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-26 09:48:03,215 basehttp 3388 6736 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-26 09:48:03,227 basehttp 3388 21768 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-26 09:48:03,564 views 3388 6736 Tours list accessed
+INFO 2025-10-26 09:48:03,565 views 3388 21768 Tours list accessed
+INFO 2025-10-26 09:48:04,117 basehttp 3388 21768 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 09:48:04,117 basehttp 3388 6736 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 09:48:05,009 basehttp 3388 21024 "GET /media/tour_pics/fort-jesus_FyLuVj1.jpg HTTP/1.1" 200 150605
+INFO 2025-10-26 09:48:05,928 basehttp 3388 6848 "GET /media/tour_pics/mombasa_pic_awT4Jxj.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-26 09:48:06,026 basehttp 3388 2544 "GET /media/tour_pics/mombasa_pic_oNkiwbK.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-26 09:48:06,030 basehttp 3388 12044 "GET /media/tour_pics/mombasa_pic.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-26 09:48:06,185 basehttp 3388 3284 "GET /media/tour_pics/pyramid-of-giza.jpg HTTP/1.1" 200 1390126
+INFO 2025-10-26 09:48:07,891 basehttp 3388 68 "GET /media/tour_pics/kisumu-city.jpg HTTP/1.1" 200 4392652
+INFO 2025-10-26 10:48:58,947 views 3388 6760 Tours list accessed
+INFO 2025-10-26 10:48:59,433 basehttp 3388 6760 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 10:48:59,726 views 3388 6760 Tours list accessed
+INFO 2025-10-26 10:48:59,983 basehttp 3388 6760 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 10:49:21,120 basehttp 3388 14636 "OPTIONS /api/contact/ HTTP/1.1" 200 0
+WARNING 2025-10-26 10:49:21,675 log 3388 14636 Not Found: /api/contact/
+WARNING 2025-10-26 10:49:21,677 basehttp 3388 14636 "POST /api/contact/ HTTP/1.1" 404 18666
+WARNING 2025-10-26 10:51:05,617 log 3388 22380 Not Found: /favicon.ico
+WARNING 2025-10-26 10:51:05,620 basehttp 3388 22380 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-26 10:53:03,778 basehttp 3388 19376 "OPTIONS /api/contacts/ HTTP/1.1" 200 0
+WARNING 2025-10-26 10:53:04,310 log 3388 19376 Bad Request: /api/contacts/
+WARNING 2025-10-26 10:53:04,311 basehttp 3388 19376 "POST /api/contacts/ HTTP/1.1" 400 136
+WARNING 2025-10-26 10:53:31,002 log 3388 19376 Bad Request: /api/contacts/
+WARNING 2025-10-26 10:53:31,003 basehttp 3388 19376 "POST /api/contacts/ HTTP/1.1" 400 136
+WARNING 2025-10-26 10:54:18,007 log 3388 19376 Bad Request: /api/contacts/
+WARNING 2025-10-26 10:54:18,010 basehttp 3388 19376 "POST /api/contacts/ HTTP/1.1" 400 136
+WARNING 2025-10-26 11:00:49,621 log 3388 13356 Bad Request: /api/contacts/
+WARNING 2025-10-26 11:00:49,623 basehttp 3388 13356 "POST /api/contacts/ HTTP/1.1" 400 96
+WARNING 2025-10-26 11:01:46,013 log 3388 13356 Bad Request: /api/contacts/
+WARNING 2025-10-26 11:01:46,014 basehttp 3388 13356 "POST /api/contacts/ HTTP/1.1" 400 155
+WARNING 2025-10-26 11:06:34,554 log 3388 18200 Bad Request: /api/contacts/
+WARNING 2025-10-26 11:06:34,555 basehttp 3388 18200 "POST /api/contacts/ HTTP/1.1" 400 117
+INFO 2025-10-26 11:13:45,861 autoreload 3388 11632 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\views.py changed, reloading.
+INFO 2025-10-26 11:13:53,678 autoreload 7472 21808 Watching for file changes with StatReloader
+ERROR 2025-10-26 11:14:15,818 log 7472 15560 Internal Server Error: /api/contacts/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\views.py", line 79, in create
+    email_sent = self.send_notification_email(contact)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContactViewSet' object has no attribute 'send_notification_email'. Did you mean: 'send_notification_emails'?
+ERROR 2025-10-26 11:14:15,827 basehttp 7472 15560 "POST /api/contacts/ HTTP/1.1" 500 104083
+ERROR 2025-10-26 11:14:41,585 log 7472 13852 Internal Server Error: /api/contacts/
+Traceback (most recent call last):
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\app_venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\views.py", line 79, in create
+    email_sent = self.send_notification_email(contact)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContactViewSet' object has no attribute 'send_notification_email'. Did you mean: 'send_notification_emails'?
+ERROR 2025-10-26 11:14:41,589 basehttp 7472 13852 "POST /api/contacts/ HTTP/1.1" 500 104083
+INFO 2025-10-26 11:17:19,568 autoreload 7472 21808 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\views.py changed, reloading.
+INFO 2025-10-26 11:17:22,286 autoreload 23068 20440 Watching for file changes with StatReloader
+ERROR 2025-10-26 11:17:41,670 views 23068 17348 Email sending error: 'Settings' object has no attribute 'ADMIN_EMAIL'
+INFO 2025-10-26 11:17:41,672 basehttp 23068 17348 "POST /api/contacts/ HTTP/1.1" 201 133
+WARNING 2025-10-26 11:18:24,276 log 23068 8324 Forbidden: /api/contacts/PUT/
+WARNING 2025-10-26 11:18:24,277 basehttp 23068 8324 "GET /api/contacts/PUT/ HTTP/1.1" 403 5223
+WARNING 2025-10-26 11:18:24,942 log 23068 8324 Not Found: /favicon.ico
+WARNING 2025-10-26 11:18:24,944 basehttp 23068 8324 "GET /favicon.ico HTTP/1.1" 404 2682
+WARNING 2025-10-26 11:18:28,935 log 23068 8324 Forbidden: /api/contacts/
+WARNING 2025-10-26 11:18:28,937 basehttp 23068 8324 "GET /api/contacts/ HTTP/1.1" 403 5055
+WARNING 2025-10-26 11:18:36,144 log 23068 8324 Forbidden: /api/contacts/
+WARNING 2025-10-26 11:18:36,145 basehttp 23068 8324 "GET /api/contacts/ HTTP/1.1" 403 5055
+INFO 2025-10-26 11:19:01,105 views 23068 8324 Tours list accessed
+INFO 2025-10-26 11:19:01,462 basehttp 23068 8324 "GET /api/tours/ HTTP/1.1" 200 18195
+INFO 2025-10-26 11:19:12,718 basehttp 23068 8324 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-10-26 11:19:13,157 basehttp 23068 8324 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-10-26 11:19:13,897 basehttp 23068 23352 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-26 11:19:13,917 basehttp 23068 8324 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-26 11:19:13,930 basehttp 23068 21368 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-26 11:19:14,043 basehttp 23068 16460 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-10-26 11:19:14,109 basehttp 23068 6680 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-26 11:19:14,114 basehttp 23068 17452 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-26 11:19:14,398 basehttp 23068 8324 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-26 11:19:24,597 basehttp 23068 8324 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-10-26 11:19:25,050 basehttp 23068 8324 "GET /admin/ HTTP/1.1" 200 13095
+INFO 2025-10-26 11:19:25,435 basehttp 23068 8324 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-10-26 11:19:25,809 basehttp 23068 8324 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-10-26 11:19:25,813 basehttp 23068 23352 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-10-26 11:19:36,111 basehttp 23068 23352 "GET /admin/contacts/contact/ HTTP/1.1" 200 16425
+INFO 2025-10-26 11:19:36,500 basehttp 23068 23352 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-10-26 11:19:36,644 basehttp 23068 8324 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-26 11:19:36,653 basehttp 23068 21808 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-26 11:19:36,654 basehttp 23068 7472 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-10-26 11:19:36,714 basehttp 23068 15884 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-26 11:19:36,722 basehttp 23068 18896 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-26 11:19:36,722 basehttp 23068 1096 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-26 11:19:36,752 basehttp 23068 17232 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-26 11:19:36,782 basehttp 23068 8924 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-26 11:19:36,894 basehttp 23068 20876 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-26 11:19:36,972 basehttp 23068 18276 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-26 11:19:37,555 basehttp 23068 8324 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-10-26 11:19:37,736 basehttp 23068 23352 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-10-26 11:19:37,737 basehttp 23068 8324 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-10-26 11:19:37,765 basehttp 23068 2072 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-10-26 11:46:14,368 autoreload 23068 20440 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
+INFO 2025-10-26 11:59:22,612 autoreload 15688 18852 Watching for file changes with StatReloader
+INFO 2025-10-26 12:05:41,404 autoreload 15688 18852 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
+INFO 2025-10-26 12:05:44,763 autoreload 19896 20468 Watching for file changes with StatReloader
+INFO 2025-10-26 12:13:53,097 autoreload 19896 20468 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
+INFO 2025-10-26 12:13:56,008 autoreload 15952 18728 Watching for file changes with StatReloader
+INFO 2025-10-26 13:57:47,764 basehttp 15952 12868 "OPTIONS /api/contacts/ HTTP/1.1" 200 0
+INFO 2025-10-26 13:57:51,881 views 15952 12868 Emails sent for contact submission: 4
+INFO 2025-10-26 13:57:51,893 basehttp 15952 12868 "POST /api/contacts/ HTTP/1.1" 201 132
+INFO 2025-10-26 14:21:38,246 views 15952 2480 Emails sent for contact submission: 5
+INFO 2025-10-26 14:21:38,249 basehttp 15952 2480 "POST /api/contacts/ HTTP/1.1" 201 132
+INFO 2025-10-26 14:40:41,797 views 15952 21748 Emails sent for contact submission: 6
+INFO 2025-10-26 14:40:41,800 basehttp 15952 21748 "POST /api/contacts/ HTTP/1.1" 201 132
+WARNING 2025-10-26 14:42:39,187 log 15952 21424 Bad Request: /api/contacts/
+WARNING 2025-10-26 14:42:39,188 basehttp 15952 21424 "POST /api/contacts/ HTTP/1.1" 400 116
+INFO 2025-10-26 14:43:04,940 views 15952 21424 Emails sent for contact submission: 7
+INFO 2025-10-26 14:43:04,942 basehttp 15952 21424 "POST /api/contacts/ HTTP/1.1" 201 132
+INFO 2025-10-26 14:58:39,698 autoreload 15952 18728 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\contacts\views.py changed, reloading.
+INFO 2025-10-26 14:58:44,821 autoreload 5556 6404 Watching for file changes with StatReloader
+INFO 2025-10-26 14:59:36,184 views 5556 5312 Emails sent for contact submission: 8
+INFO 2025-10-26 14:59:36,188 basehttp 5556 5312 "POST /api/contacts/ HTTP/1.1" 201 132
+INFO 2025-10-26 15:02:27,056 views 5556 12908 Emails sent for contact submission: 9
+INFO 2025-10-26 15:02:27,059 basehttp 5556 12908 "POST /api/contacts/ HTTP/1.1" 201 132
+INFO 2025-10-26 15:32:15,729 basehttp 5556 12900 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-26 15:32:15,733 basehttp 5556 17872 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-26 15:32:16,050 views 5556 17872 Tours list accessed
+INFO 2025-10-26 15:32:16,247 basehttp 5556 17872 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 15:32:16,552 views 5556 17872 Tours list accessed
+INFO 2025-10-26 15:32:16,773 basehttp 5556 17872 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-26 21:57:13,897 basehttp 5556 21348 "GET /api/ HTTP/1.1" 200 127
+WARNING 2025-10-26 21:57:14,791 log 5556 21348 Not Found: /favicon.ico
+WARNING 2025-10-26 21:57:14,793 basehttp 5556 21348 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-26 21:57:33,304 basehttp 5556 6584 "GET /api/tours HTTP/1.1" 301 0
+INFO 2025-10-26 21:57:33,885 views 5556 18884 Tours list accessed
+INFO 2025-10-26 21:57:34,106 basehttp 5556 18884 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 14:39:10,250 basehttp 5556 20292 "GET /api/ HTTP/1.1" 200 127
+INFO 2025-10-27 14:39:56,830 basehttp 5556 20292 "GET /api/ HTTP/1.1" 200 127
+INFO 2025-10-27 14:40:21,864 basehttp 5556 20292 "GET /api/ HTTP/1.1" 200 127
+INFO 2025-10-27 14:40:48,003 basehttp 5556 20292 "GET /api/ HTTP/1.1" 200 127
+WARNING 2025-10-27 14:40:59,661 log 5556 20292 Not Found: /
+WARNING 2025-10-27 14:40:59,663 basehttp 5556 20292 "GET / HTTP/1.1" 404 2631
+INFO 2025-10-27 14:41:10,042 views 5556 20292 Tours list accessed
+INFO 2025-10-27 14:41:10,138 basehttp 5556 20292 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 14:41:19,699 basehttp 5556 20292 "GET /api/ HTTP/1.1" 200 127
+WARNING 2025-10-27 14:41:36,150 log 5556 1172 Not Found: /
+WARNING 2025-10-27 14:41:36,151 basehttp 5556 1172 "GET / HTTP/1.1" 404 2631
+INFO 2025-10-27 14:41:51,603 basehttp 5556 15624 "GET /admin/ HTTP/1.1" 200 13095
+INFO 2025-10-27 14:41:52,275 basehttp 5556 14244 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-27 14:41:52,292 basehttp 5556 15624 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-27 14:41:52,402 basehttp 5556 25124 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-10-27 14:41:52,530 basehttp 5556 16500 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-27 14:41:52,567 basehttp 5556 20652 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-27 14:41:52,587 basehttp 5556 15556 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-27 14:41:52,892 basehttp 5556 15624 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-27 14:41:52,921 basehttp 5556 14244 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-10-27 14:41:52,925 basehttp 5556 18424 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-10-27 14:42:05,138 views 5556 14244 Tours list accessed
+INFO 2025-10-27 14:42:05,155 basehttp 5556 14244 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 14:42:09,533 basehttp 5556 14244 "GET /api/ HTTP/1.1" 200 127
+INFO 2025-10-27 14:42:18,386 basehttp 5556 14244 "GET /admin/ HTTP/1.1" 200 13095
+INFO 2025-10-27 14:42:24,757 basehttp 5556 16472 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 14:42:24,865 basehttp 5556 17276 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 14:42:25,058 views 5556 17276 Tours list accessed
+INFO 2025-10-27 14:42:25,232 basehttp 5556 17276 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 14:42:25,527 views 5556 17276 Tours list accessed
+INFO 2025-10-27 14:42:25,728 basehttp 5556 17276 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 14:42:25,918 basehttp 5556 15984 "GET /media/tour_pics/kisumu-city.jpg HTTP/1.1" 304 0
+INFO 2025-10-27 14:42:25,924 basehttp 5556 19232 "GET /media/tour_pics/mombasa_pic.jpg HTTP/1.1" 304 0
+INFO 2025-10-27 14:42:25,929 basehttp 5556 3884 "GET /media/tour_pics/mombasa_pic_oNkiwbK.jpg HTTP/1.1" 304 0
+INFO 2025-10-27 14:42:25,930 basehttp 5556 22832 "GET /media/tour_pics/mombasa_pic_awT4Jxj.jpg HTTP/1.1" 304 0
+INFO 2025-10-27 14:45:49,310 basehttp 5556 24828 "GET /api/contacts/ HTTP/1.1" 200 1405
+INFO 2025-10-27 14:46:14,939 views 5556 24828 Destinations list accessed
+INFO 2025-10-27 14:46:14,992 basehttp 5556 24828 "GET /api/destinations/ HTTP/1.1" 200 1047
+INFO 2025-10-27 14:46:46,828 basehttp 5556 24828 "GET /admin/contacts/contact/ HTTP/1.1" 200 19350
+INFO 2025-10-27 14:46:47,225 basehttp 5556 24828 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-10-27 14:46:47,421 basehttp 5556 19328 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-27 14:46:47,449 basehttp 5556 22660 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-10-27 14:46:47,458 basehttp 5556 21932 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-27 14:46:47,475 basehttp 5556 13644 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-27 14:46:47,534 basehttp 5556 20108 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-27 14:46:47,552 basehttp 5556 25176 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-27 14:46:47,591 basehttp 5556 14968 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-27 14:46:47,684 basehttp 5556 21224 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-27 14:46:47,745 basehttp 5556 19508 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-27 14:46:47,944 basehttp 5556 20232 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-27 14:46:48,414 basehttp 5556 19328 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-10-27 14:46:48,605 basehttp 5556 19328 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-10-27 14:46:48,610 basehttp 5556 24828 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-10-27 14:46:48,624 basehttp 5556 25120 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-10-27 14:46:55,142 basehttp 5556 24828 "GET /admin/contacts/contact/8/change/ HTTP/1.1" 200 18195
+INFO 2025-10-27 14:46:55,489 basehttp 5556 24828 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-10-27 14:46:55,566 basehttp 5556 19328 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-27 14:46:55,658 basehttp 5556 17620 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-10-27 14:46:55,814 basehttp 5556 19328 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-10-27 14:46:56,027 basehttp 5556 17620 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-10-27 14:47:12,309 basehttp 5556 17620 "GET /admin/contacts/contact/ HTTP/1.1" 200 19350
+INFO 2025-10-27 14:47:12,866 basehttp 5556 17620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
