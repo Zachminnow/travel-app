@@ -52,6 +52,14 @@ class ContactViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         """Handle contact form submission"""
+        ip_address = self.get_client_ip(request)
+        user_agent = request.META.get('HTTP_USER_AGENT', '')
+
+        # Add to request data
+        data = request.data.copy()
+        data['ip_address'] = ip_address
+        data['user_agent'] = user_agent
+
         serializer = self.get_serializer(data=request.data)
 
         if not serializer.is_valid():
@@ -68,7 +76,7 @@ class ContactViewSet(viewsets.ModelViewSet):
         )
 
         # Send notification emails
-        email_sent = self.send_notification_email(contact)
+        email_sent = self.send_notification_emails(contact)
 
         return Response({
             'success': True,
@@ -151,7 +159,7 @@ IP Address: {contact.ip_address}
                 admin_message,
                 settings.DEFAULT_FROM_EMAIL,
                 [settings.ADMIN_EMAIL],
-                fail_silently=True,
+                fail_silently=False,
             )
 
             # Customer confirmation
