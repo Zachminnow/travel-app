@@ -59,6 +59,30 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -251,6 +275,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -357,76 +389,20 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "format_html",
+        "importPath": "django.utils.html",
+        "description": "django.utils.html",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.utils.html",
         "documentation": {}
     },
     {
-        "label": "django.db.models.deletion",
+        "label": "logging",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "ValidationError",
-        "importPath": "django.core.exceptions",
-        "description": "django.core.exceptions",
-        "isExtraImport": true,
-        "detail": "django.core.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "django.utils",
-        "description": "django.utils",
-        "isExtraImport": true,
-        "detail": "django.utils",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "django.utils",
-        "description": "django.utils",
-        "isExtraImport": true,
-        "detail": "django.utils",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "django.utils",
-        "description": "django.utils",
-        "isExtraImport": true,
-        "detail": "django.utils",
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
         "documentation": {}
     },
     {
@@ -446,11 +422,148 @@
         "documentation": {}
     },
     {
-        "label": "slugify",
-        "importPath": "django.utils.text",
-        "description": "django.utils.text",
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
         "isExtraImport": true,
-        "detail": "django.utils.text",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "importPath": "destinations.models",
+        "description": "destinations.models",
+        "isExtraImport": true,
+        "detail": "destinations.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "importPath": "destinations.models",
+        "description": "destinations.models",
+        "isExtraImport": true,
+        "detail": "destinations.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -494,11 +607,76 @@
         "documentation": {}
     },
     {
-        "label": "CustomUser",
-        "importPath": "accounts.models",
-        "description": "accounts.models",
+        "label": "TourListSerializer",
+        "importPath": "destinations.serializers",
+        "description": "destinations.serializers",
         "isExtraImport": true,
-        "detail": "accounts.models",
+        "detail": "destinations.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
         "documentation": {}
     },
     {
@@ -507,15 +685,6 @@
         "description": "rest_framework.routers",
         "isExtraImport": true,
         "detail": "rest_framework.routers",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
         "documentation": {}
     },
     {
@@ -584,6 +753,30 @@
     },
     {
         "label": "Prefetch",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Avg",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Min",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Max",
         "importPath": "django.db.models",
         "description": "django.db.models",
         "isExtraImport": true,
@@ -834,12 +1027,237 @@
         "documentation": {}
     },
     {
+        "label": "PaymentInline",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class PaymentInline(admin.TabularInline):\n    model = Payment\n    extra = 0\n    readonly_fields = ['transaction_id', 'created_at', 'processing_at']\n    fields = ['transaction_id', 'amount', 'currency', 'payment_method',\n              'payment_type', 'status', 'created_at']\n    can_delete = False\nclass BookingParticipationInline(admin.TabularInline):\n    model = BookingParticipant\n    extra = 1",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BookingParticipationInline",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class BookingParticipationInline(admin.TabularInline):\n    model = BookingParticipant\n    extra = 1\n    fields = ['first_name', 'last_name', 'email', 'phone_number',\n              'dietary_requirements']\n@admin.register(Booking)\nclass BookingAdmin(admin.ModelAdmin):\n    list_display = [\n        'booking_reference', 'user_link', 'tour_link', 'num_participants',\n        'status_badge', 'payment_status_badge', 'total_price_display',",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BookingAdmin",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class BookingAdmin(admin.ModelAdmin):\n    list_display = [\n        'booking_reference', 'user_link', 'tour_link', 'num_participants',\n        'status_badge', 'payment_status_badge', 'total_price_display',\n        'created_at', 'days_until_tour_display'\n    ]\n    list_filter = [\n        'status', 'payment_status', 'created_at', 'tour__tour_type',\n        ('confirmed', admin.EmptyFieldListFilter),\n    ]",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentAdmin",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class PaymentAdmin(admin.ModelAdmin):\n    list_display = [\n        'transaction_id', 'booking_link', 'amount_display', 'payment_method',\n        'payment_method', 'payment_type', 'status_badge', 'created_at'\n    ]\n    list_filter = [\n        'status', 'payment_method', 'payment_type', 'created_at'\n    ]\n    search_fields = [\n        'transaction_id', 'booking__booking_reference',",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BookingParticipantAdmin",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class BookingParticipantAdmin(admin.ModelAdmin):\n    list_display = [\n        'full_name', 'booking_link', 'email', 'phone_number',\n        'dietary_requirements_preview', 'created_at'\n    ]\n    list_filter = ['created_at', 'booking__tour']\n    search_fields = [\n        'first_name', 'last_name', 'email', 'phone_number', 'passport_number',\n        'booking__booking_reference'\n    ]",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewAdmin",
+        "kind": 6,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "class ReviewAdmin(admin.ModelAdmin):\n    list_display = [\n        'rating_stars', 'user_link', 'tour_link', 'is_verified_badge',\n        'is_approved_badge', 'created_at', 'tour__destination'\n    ]\n    search_fields = [\n        'user__username', 'tour__title', 'title', 'comment',\n        'booking__booking_reference'\n    ]\n    readonly_fields = ['created_at', 'updated_at', 'booking_link']",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "backend.bookings.admin",
+        "description": "backend.bookings.admin",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass PaymentInline(admin.TabularInline):\n    model = Payment\n    extra = 0\n    readonly_fields = ['transaction_id', 'created_at', 'processing_at']\n    fields = ['transaction_id', 'amount', 'currency', 'payment_method',\n              'payment_type', 'status', 'created_at']\n    can_delete = False\nclass BookingParticipationInline(admin.TabularInline):\n    model = BookingParticipant",
+        "detail": "backend.bookings.admin",
+        "documentation": {}
+    },
+    {
         "label": "BookingsConfig",
         "kind": 6,
         "importPath": "backend.bookings.apps",
         "description": "backend.bookings.apps",
         "peekOfCode": "class BookingsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'bookings'",
         "detail": "backend.bookings.apps",
+        "documentation": {}
+    },
+    {
+        "label": "BookingQuerySet",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class BookingQuerySet(models.QuerySet):\n    \"\"\"Custom queryset for common booking filters\"\"\"\n    def confirmed(self):\n        return self.filter(status='confirmed')\n    def pending(self):\n        return self.filter(status='pending')\n    def completed(self):\n        return self.filter(status='completed')\n    def active(self):\n        # Bookings that are confirmed or pending",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "BookingManager",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class BookingManager(models.Manager):\n    \"\"\"Custom manager for booking model\"\"\"\n    def get_queryset(self):\n        return BookingQuerySet(self.model, using=self._db)\n    def confirmed(self):\n        return self.get_queryset().confirmed()\n    def pending(self):\n        return self.get_queryset().pending()\n    def active(self):\n        return self.get_queryset().active()",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "Booking",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class Booking(models.Model):\n    \"\"\"Main booking model for tour reservations\"\"\"\n    class BookingStatus(models.TextChoices):\n        PENDING = 'pending', _('Pending')\n        CONFIRMED = 'confirmed', _('Confirmed')\n        CANCELLED = 'cancelled', _('Cancalled')\n        COMPLETED = 'completed', _('Completed')\n        REFUNDED = 'refunded', _('Refunded')\n    class PaymentStatus(models):\n        UNPAID = 'unpaid', _('Unpaid')",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "Payment",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class Payment(models.Model):\n    \"\"\"Payment trnasactions for bookings\"\"\"\n    class PaymentMethod(models.TextChoices):\n        CARD = 'card', _('Credit/Debit Card')\n        MPESA = 'mpesa', _('M-Pesa')\n        PAYPAL = 'paypal', _('Paypal')\n        BANK_TRANSFER = 'bank_transfer', _('Bank Transfer')\n        CASH = 'cash', _('Cash')\n    class PaymentType(models.TextChoices):\n        FULL = 'full', _('Full Payment')",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "BookingParticipant",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class BookingParticipant(models.Model):\n    \"\"\"Individual participants in a booking\"\"\"\n    booking = models.ForeignKey(\n        Booking,\n        on_delete=models.CASCADE,\n        related_name='participants'\n    )\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    email = models.EmailField(blank=True)",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "class Review(models.Model):\n    \"\"\"Customer reviews for completed tours\"\"\"\n    booking = models.OneToOneField(\n        Booking,\n        on_delete=models.CASCADE,\n        related_name='review'\n    )\n    tour = models.ForeignKey(\n        Tour,\n        on_delete=models.CASCADE,",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "backend.bookings.models",
+        "description": "backend.bookings.models",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass BookingQuerySet(models.QuerySet):\n    \"\"\"Custom queryset for common booking filters\"\"\"\n    def confirmed(self):\n        return self.filter(status='confirmed')\n    def pending(self):\n        return self.filter(status='pending')\n    def completed(self):\n        return self.filter(status='completed')\n    def active(self):",
+        "detail": "backend.bookings.models",
+        "documentation": {}
+    },
+    {
+        "label": "BookingParticipantsSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingParticipantsSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for individuals booking participants\"\"\"\n    class Meta:\n        model = BookingParticipant\n        fields = [\n            'id', 'first_name', 'last_name', 'email', 'phone_number',\n            'date_of_birth', 'passport_number', 'nationality',\n            'dietary_requirements', 'medical_conditions',\n            'emergency_contact_name', 'emergency_contact_phone'\n        ]",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class PaymentSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for payment records\"\"\"\n    formatted_amount = serializers.SerializerMethodField()\n    class Meta:\n        model = Payment\n        fields = [\n            'id', 'transaction_id', 'amount', 'currency', 'formatted_amount',\n            'payment_method', 'payment_type', 'status', 'created_at',\n            'processed_at'\n        ]",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentCreateSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class PaymentCreateSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for creating payments\"\"\"\n    class Meta:\n        model = Payment\n        fields = [\n            'amount', 'payment_method', 'payment_type'\n        ]\n    def validate_amount(self, value):\n        \"\"\"Validate payment amount\"\"\"\n        if value <= 0:",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookingListSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingListSerializer(serializers.ModelSerializer):\n    \"\"\"Lightweighht serializer for booking lists\"\"\"\n    tour_title = serializers.CharField(source='tour.title', read_only=True)\n    destination = serializers.CharField(\n        source='tour.destination.name', read_only=True\n    )\n    status_display = serializers.CharField(\n        source='get_status_display', read_only=True)\n    payment_status_display = serializers.CharField(\n        source='get_payment_status_display', read_only=True",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookingDetailSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingDetailSerializer(serializers.ModelSerializer):\n    tour = TourListSerializer(read_only=True)\n    tour_id = serializers.PrimaryKeyRelatedField(\n        queryset=Tour.objects.all(),\n        source='tour',\n        write_only=True\n    )\n    user = serializers.SerializerMethodField()\n    participants = BookingParticipantsSerializer(many=True, read_only=True)\n    payments = PaymentSerializer(many=True, read_only=True)",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookingCreateSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingCreateSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer form creating bookings\"\"\"\n    participants = BookingParticipantsSerializer(many=True, required=False)\n    class Meta:\n        model = Booking\n        fields = [\n            'tour', 'num_participants', 'contact_email', 'contact_phone',\n            'special_requests', 'participants'\n        ]\n    def validate_tour(self, value):",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookingCancelSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingCancelSerializer(serializers.Serializer):\n    \"\"\"Serializer for cancelling bookings\"\"\"\n    reason = serializers.CharField(required=False, allow_blank=True)\n    def validate_reason(self, value):\n        if value and len(value) < 5:\n            raise serializers.ValidationError(\n                \"Cancellation reason must be atleast 5 characters.\"\n            )\n        return value\nclass ReviewSerializer(serializers.ModelSerializer):",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for tour reviews\"\"\"\n    user_name = serializers.CharField(\n        source='user.get_full_name', read_only=True)\n    tour_title = serializers.CharField(source='tour.title', read_only=True)\n    class Meta:\n        model = Review\n        fields = [\n            'id', 'booking', 'tour', 'user_name', 'tour_title', 'rating',\n            'title', 'comment', 'is_verified', 'is_approved', 'created_at'",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewDetailSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class ReviewDetailSerializer(serializers.ModelSerializer):\n    \"\"\"Detailed serializer for reviews\"\"\"\n    user_name = serializers.CharField(\n        source='user.get_full_name', read_only=True)\n    tour_title = serializers.CharField(source='tour.title', read_only=True)\n    tour_destination = serializers.CharField(\n        source='tour.destination.name', read_only=True\n    )\n    class Meta:\n        model = Review",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookingStatsSerializer",
+        "kind": 6,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "class BookingStatsSerializer(serializers.Serializer):\n    \"\"\"Serializer for booking statistics\"\"\"\n    total_bookings = serializers.IntegerField()\n    confirmed_bookings = serializers.IntegerField()\n    pending_bookings = serializers.IntegerField()\n    cancelled_bookings = serializers.IntegerField()\n    completed_bookings = serializers.IntegerField()\n    total_revenue = serializers.DecimalField(\n        max_digits=12, decimal_places=2, required=False\n    )",
+        "detail": "backend.bookings.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "backend.bookings.serializers",
+        "description": "backend.bookings.serializers",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass BookingParticipantsSerializer(serializers.ModelSerializer):\n    \"\"\"Serializer for individuals booking participants\"\"\"\n    class Meta:\n        model = BookingParticipant\n        fields = [\n            'id', 'first_name', 'last_name', 'email', 'phone_number',\n            'date_of_birth', 'passport_number', 'nationality',\n            'dietary_requirements', 'medical_conditions',\n            'emergency_contact_name', 'emergency_contact_phone'",
+        "detail": "backend.bookings.serializers",
         "documentation": {}
     },
     {
@@ -987,6 +1405,33 @@
         "documentation": {}
     },
     {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nLOGS_DIR = os.path.join(BASE_DIR, 'logs')\nif not os.path.exists(LOGS_DIR):\n    os.makedirs(LOGS_DIR)\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'formatters': {\n        'verbose': {\n            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGS_DIR",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "LOGS_DIR = os.path.join(BASE_DIR, 'logs')\nif not os.path.exists(LOGS_DIR):\n    os.makedirs(LOGS_DIR)\nLOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'formatters': {\n        'verbose': {\n            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',\n            'style': '{',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGGING",
+        "kind": 5,
+        "importPath": "backend.core.settings",
+        "description": "backend.core.settings",
+        "peekOfCode": "LOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'formatters': {\n        'verbose': {\n            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',\n            'style': '{',\n        },\n        'simple': {\n            'format': '{levelname} {message}',",
+        "detail": "backend.core.settings",
+        "documentation": {}
+    },
+    {
         "label": "LANGUAGE_CODE",
         "kind": 5,
         "importPath": "backend.core.settings",
@@ -1072,7 +1517,7 @@
         "kind": 5,
         "importPath": "backend.core.urls",
         "description": "backend.core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('destinations.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('destinations.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
         "detail": "backend.core.urls",
         "documentation": {}
     },
@@ -1144,7 +1589,7 @@
         "kind": 6,
         "importPath": "backend.destinations.forms",
         "description": "backend.destinations.forms",
-        "peekOfCode": "class TourForm(forms.ModelForm):\n    class Meta:\n        model = Tour\n        fields = [\n            'title', 'destination', 'package_type', 'description',\n            'duration_dates', 'available_from', 'available_until',\n            'max_participants', 'main_image', 'created_at'\n        ]\n    def clean(self):\n        cleaned_data = super().clean()",
+        "peekOfCode": "class TourForm(forms.ModelForm):\n    class Meta:\n        model = Tour\n        fields = [\n            'title', 'destination', 'package_type', 'description',\n            'pricing', 'duration_dates', 'available_from', 'available_until',\n            'max_participants', 'main_image', 'created_at'\n        ]\n    def clean(self):\n        cleaned_data = super().clean()",
         "detail": "backend.destinations.forms",
         "documentation": {}
     },
@@ -1234,7 +1679,7 @@
         "kind": 6,
         "importPath": "backend.destinations.serializers",
         "description": "backend.destinations.serializers",
-        "peekOfCode": "class TourCreateUpdateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Tour\n        fields = [\n            'title', 'destination', 'tour_type', 'description', 'travel_guide',\n            'location', 'duration_dates', 'available_from', 'available_until',\n            'max_participants', 'main_image'\n        ]\n    def validate_title(self, value):\n        if len(value) < 5:",
+        "peekOfCode": "class TourCreateUpdateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Tour\n        fields = [\n            'title', 'destination', 'tour_type', 'description', 'travel_guide',\n            'location', 'duration_dates', 'available_from', 'available_until',\n            'max_participants', 'main_image', 'pricing', 'currency'\n        ]\n    def validate_title(self, value):\n        if len(value) < 5:",
         "detail": "backend.destinations.serializers",
         "documentation": {}
     },
@@ -1252,7 +1697,7 @@
         "kind": 6,
         "importPath": "backend.destinations.serializers",
         "description": "backend.destinations.serializers",
-        "peekOfCode": "class TourSearchSerializer(serializers.ModelSerializer):\n    \"\"\"Optimized serializer for search results\n    Minimal fields for fast responses\n    \"\"\"\n    destination_name = serializers.CharField(\n        source='destination.name', read_only=True)\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = Tour\n        fields = [",
+        "peekOfCode": "class TourSearchSerializer(serializers.ModelSerializer):\n    \"\"\"Optimized serializer for search results\n    Minimal fields for fast responses\n    \"\"\"\n    destination_name = serializers.CharField(\n        source='destination.name', read_only=True)\n    image_url = serializers.SerializerMethodField()\n    formatted_price = serializers.SerializerMethodField()\n    class Meta:\n        model = Tour",
         "detail": "backend.destinations.serializers",
         "documentation": {}
     },
@@ -1270,7 +1715,7 @@
         "kind": 6,
         "importPath": "backend.destinations.serializers",
         "description": "backend.destinations.serializers",
-        "peekOfCode": "class TourStatsSerializer(serializers.Serializer):\n    \"\"\"Statistics for tours\"\"\"\n    total_tours = serializers.IntegerField()\n    tours_by_type = serializers.DictField()\n    available_tours = serializers.IntegerField()\n    upcoming_tours = serializers.IntegerField()",
+        "peekOfCode": "class TourStatsSerializer(serializers.Serializer):\n    \"\"\"Statistics for tours\"\"\"\n    total_tours = serializers.IntegerField()\n    tours_by_type = serializers.DictField()\n    available_tours = serializers.IntegerField()\n    upcoming_tours = serializers.IntegerField()\n    average_price = serializers.DecimalField(\n        max_digits=10, decimal_places=2, required=False)\n    price_range = serializers.DictField(required=False)",
         "detail": "backend.destinations.serializers",
         "documentation": {}
     },
@@ -1324,7 +1769,7 @@
         "kind": 5,
         "importPath": "backend.destinations.views",
         "description": "backend.destinations.views",
-        "peekOfCode": "logger = logging.getLogger('travel')\nclass IsOwnerOrReadOnly(permissions.BasePermission):\n    \"\"\"Anyone can view (GET) but only owner can edit\"\"\"\n    def has_object_permission(self, request, view, obj):\n        # read permissions for anyone\n        if request.method in permissions.SAFE_METHODS:\n            return True\n        # Check if obj has tour_organizer\n        if hasattr(obj, 'tour_organizer'):\n            return obj.tour_organizer == request.user",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass IsOwnerOrReadOnly(permissions.BasePermission):\n    \"\"\"Anyone can view (GET) but only owner can edit\"\"\"\n    def has_object_permission(self, request, view, obj):\n        # read permissions for anyone\n        if request.method in permissions.SAFE_METHODS:\n            return True\n        # Check if obj has tour_organizer\n        if hasattr(obj, 'tour_organizer'):\n            return obj.tour_organizer == request.user",
         "detail": "backend.destinations.views",
         "documentation": {}
     },
