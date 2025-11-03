@@ -1304,3 +1304,82 @@ INFO 2025-10-27 14:46:55,814 basehttp 5556 19328 "GET /static/admin/css/widgets.
 INFO 2025-10-27 14:46:56,027 basehttp 5556 17620 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
 INFO 2025-10-27 14:47:12,309 basehttp 5556 17620 "GET /admin/contacts/contact/ HTTP/1.1" 200 19350
 INFO 2025-10-27 14:47:12,866 basehttp 5556 17620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-27 16:27:02,711 basehttp 5556 25136 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 16:27:02,716 basehttp 5556 3884 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 16:27:03,239 views 5556 3884 Tours list accessed
+INFO 2025-10-27 16:27:03,240 views 5556 25136 Tours list accessed
+INFO 2025-10-27 16:27:03,557 basehttp 5556 3884 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 16:27:03,557 basehttp 5556 25136 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 16:27:04,740 basehttp 5556 24648 "GET /media/tour_pics/fort-jesus_FyLuVj1.jpg HTTP/1.1" 200 150605
+INFO 2025-10-27 16:27:05,323 basehttp 5556 2544 "GET /media/tour_pics/mombasa_pic_oNkiwbK.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-27 16:27:05,360 basehttp 5556 9496 "GET /media/tour_pics/mombasa_pic_awT4Jxj.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-27 16:27:05,372 basehttp 5556 24192 "GET /media/tour_pics/mombasa_pic.jpg HTTP/1.1" 200 1223136
+INFO 2025-10-27 16:27:06,141 basehttp 5556 21000 "GET /media/tour_pics/pyramid-of-giza.jpg HTTP/1.1" 200 1390126
+INFO 2025-10-27 16:27:11,262 basehttp 5556 10796 "GET /media/tour_pics/kisumu-city.jpg HTTP/1.1" 200 4392652
+INFO 2025-10-27 16:40:42,790 basehttp 5556 23468 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 16:40:42,793 basehttp 5556 19504 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 16:40:43,095 views 5556 19504 Tours list accessed
+INFO 2025-10-27 16:40:43,104 views 5556 23468 Tours list accessed
+INFO 2025-10-27 16:40:43,338 basehttp 5556 23468 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 16:40:43,338 basehttp 5556 19504 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 16:41:38,096 views 5556 23716 Tours list accessed
+INFO 2025-10-27 16:41:38,118 basehttp 5556 23716 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 17:10:51,450 basehttp 5556 22544 "OPTIONS /api/contacts/ HTTP/1.1" 200 0
+INFO 2025-10-27 17:10:57,568 views 5556 22544 Emails sent for contact submission: 10
+INFO 2025-10-27 17:10:57,570 basehttp 5556 22544 "POST /api/contacts/ HTTP/1.1" 201 133
+INFO 2025-10-27 17:42:13,286 views 5556 4000 Tours list accessed
+INFO 2025-10-27 17:42:13,590 basehttp 5556 4000 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 17:42:14,049 views 5556 4000 Tours list accessed
+INFO 2025-10-27 17:42:14,193 basehttp 5556 4000 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 19:32:51,009 basehttp 5556 15328 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 19:32:51,010 basehttp 5556 20224 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 19:32:51,787 views 5556 20224 Tours list accessed
+INFO 2025-10-27 19:32:51,983 basehttp 5556 20224 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 19:32:52,841 views 5556 20224 Tours list accessed
+INFO 2025-10-27 19:32:52,931 basehttp 5556 20224 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 19:49:54,290 views 5556 25304 Tours list accessed
+INFO 2025-10-27 19:49:54,459 basehttp 5556 25304 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 19:49:55,347 views 5556 25304 Tours list accessed
+INFO 2025-10-27 19:49:55,435 basehttp 5556 25304 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 20:18:45,158 views 5556 16220 Tours list accessed
+INFO 2025-10-27 20:18:45,298 basehttp 5556 16220 "GET /api/tours/ HTTP/1.1" 200 3605
+WARNING 2025-10-27 20:18:45,644 log 5556 16220 Too Many Requests: /api/tours/
+WARNING 2025-10-27 20:18:45,649 basehttp 5556 16220 "GET /api/tours/ HTTP/1.1" 429 70
+WARNING 2025-10-27 20:21:37,792 log 5556 21212 Too Many Requests: /api/tours/
+WARNING 2025-10-27 20:21:37,799 basehttp 5556 21212 "GET /api/tours/ HTTP/1.1" 429 70
+WARNING 2025-10-27 20:21:38,453 log 5556 21212 Too Many Requests: /api/tours/
+WARNING 2025-10-27 20:21:38,454 basehttp 5556 21212 "GET /api/tours/ HTTP/1.1" 429 70
+WARNING 2025-10-27 20:28:14,115 log 5556 22008 Too Many Requests: /api/tours/
+WARNING 2025-10-27 20:28:14,123 basehttp 5556 22008 "GET /api/tours/ HTTP/1.1" 429 70
+WARNING 2025-10-27 20:28:14,479 log 5556 22008 Too Many Requests: /api/tours/
+WARNING 2025-10-27 20:28:14,482 basehttp 5556 22008 "GET /api/tours/ HTTP/1.1" 429 70
+INFO 2025-10-27 21:17:16,269 views 5556 2616 Tours list accessed
+INFO 2025-10-27 21:17:16,465 basehttp 5556 2616 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 21:48:22,704 basehttp 5556 14744 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 21:48:22,704 basehttp 5556 25200 "OPTIONS /api/tours/ HTTP/1.1" 200 0
+INFO 2025-10-27 21:48:23,414 views 5556 25200 Tours list accessed
+INFO 2025-10-27 21:48:23,560 basehttp 5556 25200 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-27 21:48:23,858 views 5556 25200 Tours list accessed
+INFO 2025-10-27 21:48:23,957 basehttp 5556 25200 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-28 10:20:35,078 autoreload 11672 7304 Watching for file changes with StatReloader
+WARNING 2025-10-28 10:20:44,497 log 11672 6248 Not Found: /
+WARNING 2025-10-28 10:20:44,498 basehttp 11672 6248 "GET / HTTP/1.1" 404 2631
+WARNING 2025-10-28 10:20:44,979 log 11672 6248 Not Found: /favicon.ico
+WARNING 2025-10-28 10:20:44,980 basehttp 11672 6248 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-28 10:20:54,916 basehttp 11672 6248 "GET /api/ HTTP/1.1" 200 127
+INFO 2025-10-28 10:21:07,970 views 11672 6248 Tours list accessed
+INFO 2025-10-28 10:21:08,189 basehttp 11672 6248 "GET /api/tours/ HTTP/1.1" 200 3605
+INFO 2025-10-28 12:35:49,641 basehttp 11672 19356 "GET /api/ HTTP/1.1" 200 127
+WARNING 2025-10-28 12:35:50,279 log 11672 19356 Not Found: /favicon.ico
+WARNING 2025-10-28 12:35:50,279 basehttp 11672 19356 "GET /favicon.ico HTTP/1.1" 404 2682
+INFO 2025-10-28 12:36:02,442 basehttp 11672 19356 "GET /api/destinations HTTP/1.1" 301 0
+INFO 2025-10-28 12:36:03,828 views 11672 4792 Destinations list accessed
+INFO 2025-10-28 12:36:04,198 basehttp 11672 4792 "GET /api/destinations/ HTTP/1.1" 200 1047
+INFO 2025-10-28 21:43:04,012 autoreload 7672 17684 Watching for file changes with StatReloader
+WARNING 2025-10-28 21:43:58,542 log 7672 8836 Not Found: /
+WARNING 2025-10-28 21:43:58,544 basehttp 7672 8836 "GET / HTTP/1.1" 404 2631
+INFO 2025-10-29 17:01:48,703 autoreload 1612 12740 Watching for file changes with StatReloader
+WARNING 2025-10-29 17:05:11,596 log 1612 18652 Not Found: /
+WARNING 2025-10-29 17:05:11,599 basehttp 1612 18652 "GET / HTTP/1.1" 404 2631
+INFO 2025-10-29 21:49:50,703 autoreload 1612 12740 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
+INFO 2025-10-29 21:49:59,905 autoreload 4268 8376 Watching for file changes with StatReloader

@@ -1,19 +1,9 @@
-
-import ContactHero from '../components/ContactHero';
-import ContactFormBox from '../components/ContactFormBox';
-import ContactMapBox from '../components/ContactMapBox';
-
+import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="  m-0 p-0 items-center justify-center flex flex-col">
-      <div className='flex flex-col bg-white items-center justify-center'>
-        <ContactHero />
-        <ContactFormBox />
-        <ContactMapBox />
-      </div>
-
-
+    <div className="min-h-screen bg-gray-50">
+      
     </div>
   );
 };
