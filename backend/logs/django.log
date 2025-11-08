@@ -1568,3 +1568,16 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '4b7e42da21d0.n
 WARNING 2025-11-08 18:51:13,631 basehttp 20616 20500 "GET /favicon.ico HTTP/1.1" 400 80682
 INFO 2025-11-08 18:51:36,820 autoreload 20616 6060 C:\Users\kelvin\Desktop\DjangoDev\travel-app\backend\core\settings.py changed, reloading.
 INFO 2025-11-08 18:51:38,324 autoreload 21076 17604 Watching for file changes with StatReloader
+WARNING 2025-11-08 18:51:43,367 log 21076 21064 Not Found: /
+WARNING 2025-11-08 18:51:43,369 basehttp 21076 21064 "GET / HTTP/1.1" 404 2809
+WARNING 2025-11-08 18:51:44,692 log 21076 21064 Not Found: /favicon.ico
+WARNING 2025-11-08 18:51:44,693 basehttp 21076 21064 "GET /favicon.ico HTTP/1.1" 404 2860
+INFO 2025-11-08 18:51:56,881 basehttp 21076 21064 "GET /api/bookings/ HTTP/1.1" 200 212
+WARNING 2025-11-08 18:52:58,097 log 21076 21776 Not Found: /api/destinations/featured/
+WARNING 2025-11-08 18:52:58,098 basehttp 21076 21776 "GET /api/destinations/featured/ HTTP/1.1" 404 14748
+WARNING 2025-11-08 18:52:58,117 log 21076 21776 Not Found: /api/destinations/featured/
+WARNING 2025-11-08 18:52:58,119 basehttp 21076 21776 "GET /api/destinations/featured/ HTTP/1.1" 404 14748
+WARNING 2025-11-08 18:53:48,327 log 21076 15676 Not Found: /api/destinations/featured/
+WARNING 2025-11-08 18:53:48,341 basehttp 21076 15676 "GET /api/destinations/featured/ HTTP/1.1" 404 14748
+WARNING 2025-11-08 18:53:48,434 log 21076 15676 Not Found: /api/destinations/featured/
+WARNING 2025-11-08 18:53:48,443 basehttp 21076 15676 "GET /api/destinations/featured/ HTTP/1.1" 404 14748
