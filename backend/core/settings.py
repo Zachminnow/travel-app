@@ -17,12 +17,12 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'e3686eb09d83.ngrok-free.app'
+    '4b7e42da21d0.ngrok-free.app'
 
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://e3686eb09d83.ngrok-free.app'
+    'https://4b7e42da21d0.ngrok-free.app'
 ]
 
 # Application definition
@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'destinations.apps.DestinationsConfig',
     'accounts.apps.AccountsConfig',
     'contacts.apps.ContactsConfig',
+    'bookings',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

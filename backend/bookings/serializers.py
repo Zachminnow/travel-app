@@ -358,3 +358,6 @@ class BookingStatsSerializer(serializers.Serializer):
 
     popular_tours = serializers.ListField(required=False)
     revenue_by_month = serializers.DictField(required=False)
+
+
+BookingUpdateSerializer = BookingCreateSerializer

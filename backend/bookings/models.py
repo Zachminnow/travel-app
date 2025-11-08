@@ -30,7 +30,7 @@ class BookingQuerySet(models.QuerySet):
         return self.filter(status__in=['confirmed', 'pending'])
 
     def for_user(self, user):
-        return self.filter(status__in=['confirmed', 'pending'])
+        return self.filter(user=user, status__in=['confirmed', 'pending'])
 
     def for_tour(self, tour):
         return self.filter(tour=tour)
@@ -83,11 +83,11 @@ class Booking(models.Model):
     class BookingStatus(models.TextChoices):
         PENDING = 'pending', _('Pending')
         CONFIRMED = 'confirmed', _('Confirmed')
-        CANCELLED = 'cancelled', _('Cancalled')
+        CANCELLED = 'cancelled', _('Cancelled')
         COMPLETED = 'completed', _('Completed')
         REFUNDED = 'refunded', _('Refunded')
 
-    class PaymentStatus(models):
+    class PaymentStatus(models.TextChoices):
         UNPAID = 'unpaid', _('Unpaid')
         PARTIAL = 'partial', _('Partially Paid')
         PAID = 'paid', _('Paid')
@@ -134,9 +134,9 @@ class Booking(models.Model):
         default=BookingStatus.PENDING,
         db_index=True
     )
-    PaymentStatus = models.CharField(
+    payment_status = models.CharField(
         max_length=20,
-        choices=BookingStatus.PENDING,
+        choices=PaymentStatus.choices,
         default=PaymentStatus.UNPAID,
         db_index=True
     )
@@ -222,7 +222,7 @@ class Booking(models.Model):
 
         if not self.tour.is_active:
             raise ValidationError(
-                "Cannot book tours that have already started.")
+                "Cannot book tours that have not already started.")
 
         if self.num_participants > self.tour.max_participants:
             raise ValidationError(
@@ -314,7 +314,7 @@ class Booking(models.Model):
     def is_active(self):
         """Check if booking is active"""
         return self.status in [self.BookingStatus.PENDING,
-                               self.BookingStatus.COMPLETED]
+                               self.BookingStatus.CONFIRMED]
 
     @property
     def can_be_cancelled(self):
@@ -379,9 +379,9 @@ class Payment(models.Model):
     payment_method = models.CharField(
         max_length=20, choices=PaymentMethod.choices)
     payment_type = models.CharField(max_length=20,
-                                    choices=PaymentMethod.choices,
+                                    choices=PaymentType.choices,
                                     default=PaymentType.FULL)
-    status = models.CharField(max_length=20, choices=PaymentType.choices,
+    status = models.CharField(max_length=20, choices=TransactionStatus.choices,
                               default=TransactionStatus.PENDING, db_index=True)
 
     gateway_response = models.JSONField(
@@ -402,7 +402,7 @@ class Payment(models.Model):
             models.Index(fields=['booking', 'status']),
         ]
         verbose_name = _('Payment')
-        verbose_name_plural = _('payment')
+        verbose_name_plural = _('Payments')
 
     def __str__(self):
         return f"{self.transaction_id} - {self.booking.booking_reference} - {self.amount}"
@@ -429,7 +429,7 @@ class Payment(models.Model):
             if not Payment.objects.filter(transaction_id=txn_id).exists():
                 return txn_id
 
-    def mark_completed(self, save):
+    def mark_completed(self, save=True):
         """Mark payment as completed"""
         self.status = self.TransactionStatus.COMPLETED
         self.processed_at = timezone.now()
@@ -489,7 +489,7 @@ class BookingParticipant(models.Model):
     passport_number = models.CharField(max_length=50, blank=True)
     nationality = models.CharField(max_length=100, blank=True)
 
-    detary_requirements = models.TextField(blank=True)
+    dietary_requirements = models.TextField(blank=True)
     medical_conditions = models.TextField(blank=True)
     emergency_contact_name = models.CharField(max_length=200, blank=True)
     emergency_contact_phone = models.CharField(max_length=20, blank=True)
@@ -499,12 +499,11 @@ class BookingParticipant(models.Model):
 
     class Meta:
         ordering = ['booking', 'last_name', 'first_name']
-        verbose_name = _('Booking Participants')
+        verbose_name = _('Booking Participant')
         verbose_name_plural = _('Booking Participants')
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} -"
-        "{self.booking.booking_reference}"
+        return f"{self.first_name} {self.last_name} - {self.booking.booking_reference}"
 
     @property
     def full_name(self):
@@ -566,6 +565,6 @@ class Review(models.Model):
         super().save(*args, **kwargs)
         logger.info(
             f"Review created by {self.user.username} for tour"
-            "{self.tour.title}"
+            f"{self.tour.title}"
             f"with rating {self.rating}"
         )

@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class PaymentInline(admin.TabularInline):
     model = Payment
     extra = 0
-    readonly_fields = ['transaction_id', 'created_at', 'processing_at']
+    readonly_fields = ['transaction_id', 'created_at', 'processed_at']
     fields = ['transaction_id', 'amount', 'currency', 'payment_method',
               'payment_type', 'status', 'created_at']
     can_delete = False
